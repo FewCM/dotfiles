@@ -1,0 +1,12 @@
+ibus-daemon -drxR
+wired -r
+dwmbar
+dwmcomp
+dwmremaps
+indicator-sound-switcher
+setbg
+unclutter
+playerctld daemon
+Acquired notification bus name.
+Polybar launched...
+DBus Init Success.

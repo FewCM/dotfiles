@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+source "$DOT_FILES_DIR/sh_utils.sh"
+
+git_showconfig() {
+  if command_exists bat; then
+    bat ~/.gitconfig
+  else
+    cat ~/.gitconfig
+  fi
+}
+
+git_showconfig

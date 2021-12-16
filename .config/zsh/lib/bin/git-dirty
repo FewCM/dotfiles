@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+git_dirty() {
+  git -c color.ui=always status --short | grep '^.[^ ]' --color=never
+}
+
+git_dirty
