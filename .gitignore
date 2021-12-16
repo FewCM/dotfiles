@@ -24,6 +24,8 @@
 !.Xresources
 !.xsettingsd
 !.zshenv
+!foreignpkglist.txt
+!pkglist.txt
 
 ## local
 !/.local/
