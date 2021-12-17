@@ -1,7 +1,6 @@
 #!/bin/zsh
 skip_global_compinit=1
 
-umask 022
 unsetopt GLOBAL_RCS
 setopt noglobalrcs
 
