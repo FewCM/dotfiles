@@ -2,8 +2,6 @@ alacritty
 alsa-plugins
 alsa-tools
 alsa-utils
-apparmor
-archcraft-lxdm
 archcraft-nvim
 archiso
 aria2
@@ -31,8 +29,6 @@ calc
 calcurse
 ccache
 chafa
-chaotic-keyring
-chaotic-mirrorlist
 ctags
 curl
 dconf-editor
@@ -118,8 +114,10 @@ libportal
 libtool
 libusb-compat
 libxft-bgra
+linux
 linux-atm
 linux-firmware
+linux-headers
 linux-zen
 linux-zen-headers
 lnav
@@ -198,8 +196,6 @@ picom-ibhagwan-git
 pkgconf
 pkgfile
 playerctl
-plymouth-git
-plymouth-themes
 polkit-gnome
 polybar-dwm-module-git
 ppp
@@ -239,7 +235,6 @@ smartmontools
 snapper
 sof-firmware
 speedtest++
-spotify-tui-bin
 sshfs
 sudo
 svgo

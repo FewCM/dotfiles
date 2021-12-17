@@ -644,3 +644,4 @@ Dec 03 06:20 : player: played "南拳媽媽(Nan Quan Mama)-下雨天Xia Yu Tian 
 Dec 03 06:34 : client: [1] command "close" during idle
 Dec 03 06:45 : client: [2] command "close" during idle
 Dec 03 06:48 : client: [4] command "close" during idle
+Dec 18 03:41 : exception: Failed to open '/home/fewcm/.config/mpd/mpdstate': No such file or directory
