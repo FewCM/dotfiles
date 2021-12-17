@@ -139,6 +139,7 @@ mkinitcpio-archiso
 mkinitcpio-nfs-utils
 mlocate
 modemmanager
+mopidy
 moreutils
 mpc
 mpd
@@ -188,6 +189,7 @@ pass-import
 patch
 pavucontrol
 pcsclite
+perl-file-mimeinfo
 perl-image-exiftool
 perl-term-readkey
 phonon-qt5-gstreamer

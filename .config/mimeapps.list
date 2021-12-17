@@ -1,5 +1,4 @@
 [Default Applications]
-application/x-shellscript=geany.desktop;
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 inode/directory=nemo.desktop;
@@ -12,6 +11,8 @@ image/svg+xml=feh.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 video/mp4=vlc.desktop
+text/x-systemd-unit=geany.desktop
+text/plain=geany.desktop
 
 [Added Associations]
 image/png=feh.desktop;
@@ -188,7 +189,6 @@ application/x-rpm=org.gnome.FileRoller.desktop;xarchiver.desktop;
 application/x-rsdf-container=jd-containers.desktop;
 application/x-rzip=org.gnome.FileRoller.desktop;
 application/x-rzip-compressed-tar=org.gnome.FileRoller.desktop;
-application/x-shellscript=nvim.desktop;vim.desktop;
 application/x-shockwave-flash=vlc.desktop;
 application/x-shorten=mpv.desktop;
 application/x-smil=mplayer.desktop;mpv.desktop;
@@ -339,7 +339,6 @@ text/css=geany.desktop;
 text/english=nvim.desktop;vim.desktop;
 text/google-video-pointer=vlc.desktop;
 text/html=geany.desktop;google-chrome-beta.desktop;microsoft-edge-beta.desktop;microsoft-edge-dev.desktop;
-text/plain=geany.desktop;leafpad.desktop;nvim.desktop;vim.desktop;
 text/x-c=nvim.desktop;vim.desktop;
 text/x-c++=nvim.desktop;vim.desktop;
 text/x-c++hdr=geany.desktop;nvim.desktop;vim.desktop;
@@ -427,6 +426,9 @@ x-scheme-handler/rtsp=vlc.desktop;
 x-scheme-handler/skype=skypeforlinux.desktop;
 x-scheme-handler/tel=skypeforlinux.desktop;
 application/x-executable=geany.desktop;
+text/x-systemd-unit=geany.desktop;
+text/plain=geany.desktop;
 
 [Removed Associations]
 inode/directory=easytag.desktop;
+application/x-shellscript=geany.desktop;

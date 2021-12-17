@@ -7,7 +7,7 @@
 /home/fewcm/.local/bin/fd|3.2389114728850332|1638205488
 /root/cfg|4.8583672093275494|1638030226
 /usr/share/git-core/templates|5.265126137993807|1638392475
-/home/fewcm/Downloads|100.34509187726971|1639639955
+/home/fewcm/Downloads|101.34509187726971|1639754418
 /home/fewcm/.cache/aurutils/sync/font-manager-git/src|1.9405979999999998|1638441340
 /home/fewcm/.config/aurutils|12.812367861244569|1638452201
 /usr/share/kak/rc|6.7435455470714132|1638391593
@@ -35,7 +35,6 @@
 /usr/share/nemo-preview/js|1.7029155421897508|1638392166
 /etc/modprobe.d|15.619455736442516|1638458777
 /dev/cpu|1.6194557364425166|1633772680
-/home/fewcm/suckless/dmenu/pinentry|4.8583672093275494|1638241111
 /home/fewcm/Downloads/installer-v1.3.3/contrib|3.4835864322564962|1638433576
 /usr/share/archiso/configs/releng/airootfs/etc|11.336190155097619|1637869994
 /home/fewcm/.config/starship|2|1638484134
@@ -46,12 +45,11 @@
 /usr/share/archiso/configs/releng/airootfs/etc/xdg|3.2389114728850332|1637869980
 /etc/udev/rules.d|1.6194557364425166|1634999337
 /usr/share/git/diff-highlight|3.5278117894301939|1638392526
-/home/fewcm/Git|15|1639640030
+/home/fewcm/Git|17|1639741029
 /home/fewcm/Downloads/installer-v1.3.3/src/etc/zsh|1.6194557364425166|1638375788
 /etc/systemd/user/sockets.target.wants|1.6194557364425166|1635351693
 /home/fewcm/.config/google-chrome-back-ovfs|1.6858863867678533|1638390184
 /home/fewcm/Downloads/installer-v1.3.3/src/usr/lib|6.9671728645129924|1638433622
-/home/fewcm/suckless/dmenu/patch|1.6194557364425166|1638240947
 /etc/pacman.d|3.2389114728850332|1637442781
 /home/fewcm/.local/share/fonts|19.194557364425172|1638537090
 /etc/cron.daily|1.6194557364425166|1633956845
@@ -133,8 +131,8 @@
 /run/user/1000|53.58367209327551|1638576121
 /etc/kernel/install.d|1.6194557364425166|1635243891
 /home/fewcm/.config/polybar/dwm/bin|1.6690275229001748|1638390067
-/home/fewcm/.config/polybar|5.3380550458003491|1638485570
 /usr/share/kbd/keymaps|3.3888019289576046|1638392155
+/home/fewcm/.config/polybar|5.3380550458003491|1638485570
 /usr/share/zsh/functions/Completion/Zsh|3.3569473619804726|1638392343
 /etc/xdg/menus|1.6194557364425166|1633588394
 /home/fewcm/Documents/key-backup/2021-11-26-19-41-36/F820AFAD44C1060D9D43EC4B941757AAE8D74892/home/fewcm/.local/share|6.4778229457700665|1638010419
@@ -142,7 +140,6 @@
 /usr/share/git/buildsystems|1.7550420459979357|1638392517
 /home/fewcm/.local/share/rustup|13.906662456127799|1638432071
 /home/fewcm/.cache/aurutils/sync/ugit|1.7906765085174325|1638392838
-/home/fewcm/suckless/clean|27.530747519522784|1638382912
 /home/fewcm/.config/spotify/Users|4|1638484125
 /usr/share/zsh/functions/Completion/Base|3.3569473619804726|1638392328
 /home/fewcm/.config/nemo|1.6194557364425166|1637747590
@@ -236,6 +233,7 @@
 /home/fewcm/Git/st-flexipatch|32|1639633880
 /etc/systemd/system|1.6194557364425166|1635430774
 /home/fewcm/.vscode/extensions/esbenp.prettier-vscode-9.0.0/dist|1.6194557364425166|1638351401
+/home/fewcm/Git/archlive|1|1639741062
 /usr/share/systemd/bootctl|1.7201167092825767|1638392290
 /usr/share/grub|3.5455394868645165|1638392573
 /home/fewcm/Documents/key-backup/2021-11-26-19-41-36/F820AFAD44C1060D9D43EC4B941757AAE8D74892/home/fewcm|1.6194557364425166|1638008544
@@ -305,13 +303,13 @@
 /home/fewcm/.config/gopass|17.814013100867687|1638223643
 /run/user/1000/fewcm-google-chrome|9.124305342537923|1638439501
 /dev/disk|1.6194557364425166|1633772705
-/home/fewcm/.local/bin|77.446861156948103|1638450142
 /etc/X11/xorg.conf.d|3.2389114728850332|1631921413
 /etc/dkms|1.6194557364425166|1633956855
+/home/fewcm/.local/bin|80.446861156948103|1639757001
 /run/user/1000/pulse|4.8583672093275494|1638129330
 /home/fewcm/.local/share/aurutils|13.482655016259102|1638435916
 /home/fewcm/.local/bin/fzf|21.413468837310198|1638450145
-/home/fewcm/Git/my_arch|4|1639642324
+/home/fewcm/Git/my_arch|6|1639739877
 /home/fewcm/.local/share/rustup/toolchains/stable-x86_64-unknown-linux-gnu|1.8641306958139798|1638432068
 /usr/share/zsh|29.84104367428257|1638392425
 /usr/share/openvpn|5.1087466265692525|1638392204
@@ -335,12 +333,12 @@
 /home/fewcm/.config/ibus|1.6194557364425166|1637747575
 /usr/share/doc/gnupg/examples|4.8583672093275494|1637974872
 /usr/share/zsh/functions/Completion/Linux|3.3569473619804726|1638392334
+/home/fewcm/suckless/dwm-flexipatch|91|1639754039
 /home/fewcm/.local|652.34773574038559|1638784397
 /home/fewcm/.local/share/nemo|4.8583672093275494|1638379838
 /usr/share/zsh/5.8/help|3.3569473619804726|1638392314
 /home/fewcm/repos|32.261667407744042|1638627843
 /etc/audit|1.6194557364425166|1633956811
-/home/fewcm/suckless/dwm-flexipatch|79|1639605903
 /etc/conf.d|1.6194557364425166|1633956821
 /home/fewcm/.config/zsh/lib/bin/fzf-helpers|1.6194557364425166|1638175240
 /home/fewcm/.local/share|678.43354986452289|1638632088
@@ -377,6 +375,7 @@
 /home/fewcm/.config/menus|3.2389114728850332|1637747579
 /usr/share/keyutils|1.6858863867678533|1638391602
 /run|17.814013100867687|1638205481
+/home/fewcm/Git/suckless/dwm-flexipatch|8|1639753270
 /var/lib/aurbuild|5.4043961350445153|1638437488
 /home/fewcm/Downloads/dotfiles-master|32.389114728850345|1638346792
 /home/fewcm/Git/suckless/dmenu-flexipatch|16|1639739509
@@ -398,8 +397,10 @@
 /home/fewcm/Downloads/installer-v1.3.3/src/root|3.4835864322564962|1638432971
 /home/fewcm/.cache/aurutils/sync/bibata-cursor-theme-bin|1.9019800997999998|1638435931
 /home/fewcm/Downloads/installer-v1.3.3/src/usr/lib/anarchy|3.4835864322564962|1638433604
+/home/fewcm/suckless/dmenu-flexipatch|69.623740969088942|1639755926
+/home/fewcm/suckless/dmenu-flexipatch-clean|11|1639755656
+/home/fewcm/suckless/dwm-flexipatch1|6|1639754267
 /usr/share/doc/gnupg/examples/systemd-user|3.2389114728850332|1637974830
-/home/fewcm/suckless/dmenu-flexipatch|51.623740969088942|1639739524
 /etc/mkinitcpio.d|3.4835864322564962|1638434095
 /home/fewcm/Git/dmenu-clean|4|1639738419
 /home/fewcm/.local/share/zinit/polaris/etc|1.6194557364425166|1638269656
@@ -435,7 +436,7 @@
 /usr/share/applications|4.8583672093275494|1638047664
 /usr/share/plymouth/themes|4.8583672093275494|1637997246
 /usr/share/git/vscode|1.7727697434322582|1638392538
-/home/fewcm/suckless/dwm-flexipatch-clean|5|1638657505
+/home/fewcm/suckless/dwm-flexipatch-clean|17|1639755305
 /usr/share/pkgconfig|3.4402334185651533|1638392249
 /usr/share/devhelp|1.6194557364425166|1635410858
 /usr/libexec/font-manager|1.7727697434322582|1638392614
@@ -509,7 +510,6 @@
 /run/user/1000/systemd/units|1.6194557364425166|1638117157
 /etc/grub.d|1.6194557364425166|1633956865
 /usr/share/git/examples|1.7550420459979357|1638392500
-/home/fewcm/suckless/dmenu|25.911291783080266|1638382530
 /usr/share/kbd/consolefonts/partialfonts|1.7029155421897508|1638391688
 /etc/vifm/colors|1.6194557364425166|1631921425
 /usr/share/pkgconfig/personality.d|1.7201167092825767|1638392248

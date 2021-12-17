@@ -1,12 +1,12 @@
-ibus-daemon -drxR
 wired -r
-dwmbar
-indicator-sound-switcher
-dwmremaps
+ibus-daemon -drxR
 A wired socket exists; taking ownership.  Existing wired processes will not receive CLI calls.
+indicator-sound-switcher
 Acquired notification bus name.
-setbg
-Polybar launched...
 dwmcomp
+dwmremaps
+setbg
+dwmbar
 unclutter
+Polybar launched...
 DBus Init Success.

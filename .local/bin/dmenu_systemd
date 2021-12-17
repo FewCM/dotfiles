@@ -1,0 +1,42 @@
+#!/bin/bash
+# File              : dmenu_systemd
+# License           : MIT License
+# Author            : M. Nabil Adani <nblid48@gmail.com>
+# Date              : Rabu, 20/05/2020 15:54 WIB
+# Last Modified Date: Minggu, 26/07/2020 19:13 WIB
+# Last Modified By  : M. Nabil Adani <nblid48@gmail.com>
+
+DMENU="rofi -dmenu -i -p Services $@"
+#export SUDO_ASKPASS="/home/$USER/Dotfiles/scripts/dmenu_secret"
+
+systemcontrol() {
+    service=$(ls "$1" | grep "service" | $DMENU)
+    option=$(echo "$1" | cut -d "/" -f 5)
+    if [[ $service ]]; then
+        action=$(echo -e "Start\nStop\nReload" | $DMENU)
+        if [[ $option == "system" ]]; then
+            case $action in
+            Start) sudo -A systemctl restart $service ;;
+            Stop) sudo -A systemctl stop $service ;;
+            Reload) sudo -A systemctl reload $service ;;
+            esac
+        else
+            case $action in
+            Start) systemctl --user restart $service ;;
+            Stop) systemctl --user stop $service ;;
+            Reload) systemctl --user reload $service ;;
+            esac
+        fi
+        if [[ $action ]]; then
+            notify-send "Systemd" "$action : $service"
+        else
+            notify-send "Systemd" "No Action : $service"
+        fi
+    fi
+}
+
+main=$(echo -e "System\nUser" | $DMENU)
+case $main in
+User) systemcontrol /usr/lib/systemd/user ;;
+System) systemcontrol /usr/lib/systemd/system ;;
+esac
