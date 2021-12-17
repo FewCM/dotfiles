@@ -129,9 +129,5 @@ process = git-lfs filter-process
 required = true
 [credential]
 helper = /home/fewcm/.local/bin/git_credentials_from_pass $@
-helper =
-helper = /usr/bin/git-credential-manager-core
-[credential "https://dev.azure.com"]
-useHttpPath = true
 [include]
 	path = /tmp/tmphome/.config/git/gitconfig_shared

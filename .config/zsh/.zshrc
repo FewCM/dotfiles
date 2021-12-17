@@ -148,6 +148,7 @@ zinit light tj/git-extras
 zinit ice wait'1b' atload'source $ZDOTDIR/zlib/plugin_option/fzf-tab.zsh' lucid
 zinit light Aloxaf/fzf-tab
 
+
 #zinit ice wait'0b' lucid as"command" pick"dirhist" src'directory-history.plugin.zsh' atclone"sed -i 's|.directory_history|.config\/zsh\/dir_history|g' directory-history.plugin.zsh ; sed -i 's|.directory_history|.config\/zsh\/dir_history|g' dirhist" 
 #zinit light tymm/zsh-directory-history
 

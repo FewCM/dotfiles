@@ -29,6 +29,7 @@ btrfs-progs
 cabextract
 calc
 calcurse
+ccache
 chafa
 chaotic-keyring
 chaotic-mirrorlist

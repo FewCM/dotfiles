@@ -39,9 +39,6 @@ export USERXSESSIONRC="$XDG_CACHE_HOME/X11/xsessionrc"
 export ALTUSERXSESSION="$XDG_CACHE_HOME/X11/Xsession"
 export ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 
-
-export SSH_ASKPASS="/usr/bin/xaskpass"
-export SUDO_ASKPASS="/usr/bin/xaskpass"
 export GCM_CREDENTIAL_STORE=gpg
 export GCM_GITHUB_AUTHMODES="pat"
 

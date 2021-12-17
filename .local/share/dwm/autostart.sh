@@ -56,6 +56,7 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1 &
 #polkit-dumb-agent &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #eval $(gnome-keyring-daemon --components ssh,secrets,pkcs11)
+eval $(gnome-keyring-daemon --start)
 
 
 #unset SSH_AGENT_PID
