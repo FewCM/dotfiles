@@ -24,6 +24,5 @@ spotify
 spotifyd-full-git
 ventoy-bin
 visual-studio-code-bin
-xaskpass
 ydotool
 zscroll-git
