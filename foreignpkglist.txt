@@ -5,7 +5,6 @@ btdu-bin
 btrfs-du
 czkawka-gui-bin
 firedm
-git-credential-manager-core-bin
 google-chrome
 i3lock-color
 jdownloader2
