@@ -428,7 +428,7 @@ x-scheme-handler/tel=skypeforlinux.desktop;
 application/x-executable=geany.desktop;
 text/x-systemd-unit=geany.desktop;
 text/plain=geany.desktop;
+application/x-shellscript=geany.desktop;
 
 [Removed Associations]
 inode/directory=easytag.desktop;
-application/x-shellscript=geany.desktop;
