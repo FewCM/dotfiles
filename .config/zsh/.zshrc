@@ -49,9 +49,6 @@ zinit light-mode for \
 zinit ice depth'1' lucid
 zinit light bigH/auto-sized-fzf
 
-#zinit ice as"program" pick"bin/git-fuzzy"
-#zinit light bigH/git-fuzzy
-
 # colors {{{
 zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
     atpull'%atclone' pick"clrs.zsh" nocompile'!' \
@@ -85,11 +82,6 @@ zinit load starship/starship
 
 zinit ice wait'0a' src"$ZDOTDIR/zlib/plugin_option/zsh-autosuggestions.zsh" atload'!_zsh_autosuggest_start; _zsh_autosuggest_setting' lucid
 zinit light zsh-users/zsh-autosuggestions
-
-#zinit wait'0a' lucid \
-  #atinit"source /home/fewcm/.config/zsh/zlib/plugin_option/zsh-autocomplete_atinit.zsh" \
-  #atload"source /home/fewcm/.config/zsh/zlib/plugin_option/zsh-autocomplete_atload.zsh" \
-  #light-mode for @marlonrichert/zsh-autocomplete
 
 zinit ice wait'0a' blockf lucid atpull'zinit creinstall -q .'
 zinit light zsh-users/zsh-completions

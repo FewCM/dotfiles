@@ -20,11 +20,9 @@ nvidia-470xx-utils
 os-prober-btrfs
 pinentry-rofi
 pistol-git
-python2-pip
 repoctl
 skypeforlinux-stable-bin
 spotify
-spotifyd-full-git
 ventoy-bin
 visual-studio-code-bin
 ydotool
