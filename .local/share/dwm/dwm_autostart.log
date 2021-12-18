@@ -1,12 +1,13 @@
-wired -r
 ibus-daemon -drxR
-A wired socket exists; taking ownership.  Existing wired processes will not receive CLI calls.
+wired -r
 indicator-sound-switcher
-Acquired notification bus name.
-dwmcomp
 dwmremaps
-setbg
+playerctld daemon
 dwmbar
+mpd
+dwmcomp
+setbg
+Acquired notification bus name.
 unclutter
 Polybar launched...
 DBus Init Success.

@@ -1,86 +1,85 @@
-[ 12/18/2021 00:45:01.027 parse_kawase_blur_strength INFO ] blur-strength: 8 [.iter = 3, .offset = 5.000000, .expand = 50]
+playerctld successfully started with DBus service activation
+polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/dwm/config
+[ 12/18/2021 22:32:48.401 parse_kawase_blur_strength INFO ] blur-strength: 8 [.iter = 3, .offset = 5.000000, .expand = 50]
+[ 12/18/2021 22:32:48.405 atom_getter DEBUG ] Atom _NET_WM_WINDOW_OPACITY is 431
+polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/dwm/config
+[ 12/18/2021 22:32:48.406 atom_getter DEBUG ] Atom _NET_FRAME_EXTENTS is 291
+[ 12/18/2021 22:32:48.411 atom_getter DEBUG ] Atom WM_STATE is 343
+[ 12/18/2021 22:32:48.412 atom_getter DEBUG ] Atom _NET_WM_NAME is 297
+[ 12/18/2021 22:32:48.412 atom_getter DEBUG ] Atom _NET_WM_PID is 298
+[ 12/18/2021 22:32:48.412 atom_getter DEBUG ] Atom WM_NAME is 39
+[ 12/18/2021 22:32:48.413 atom_getter DEBUG ] Atom WM_CLASS is 67
+[ 12/18/2021 22:32:48.501 atom_getter DEBUG ] Atom WM_ICON_NAME is 37
 Traceback (most recent call last):
   File "/usr/bin/indicator-sound-switcher", line 33, in <module>
-[ 12/18/2021 00:45:01.028 atom_getter DEBUG ] Atom _NET_WM_WINDOW_OPACITY is 431
     sys.exit(load_entry_point('indicator-sound-switcher==2.3.5.2', 'console_scripts', 'indicator-sound-switcher')())
   File "/usr/bin/indicator-sound-switcher", line 22, in importlib_load_entry_point
     for entry_point in distribution(dist_name).entry_points
   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 919, in distribution
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/dwm/config
     return Distribution.from_name(distribution_name)
   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 518, in from_name
     raise PackageNotFoundError(name)
 importlib.metadata.PackageNotFoundError: No package metadata was found for indicator-sound-switcher
-[ 12/18/2021 00:45:01.028 atom_getter DEBUG ] Atom _NET_FRAME_EXTENTS is 291
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/dwm/config
-[ 12/18/2021 00:45:01.032 atom_getter DEBUG ] Atom WM_STATE is 343
-[ 12/18/2021 00:45:01.036 atom_getter DEBUG ] Atom _NET_WM_NAME is 297
-[ 12/18/2021 00:45:01.036 atom_getter DEBUG ] Atom _NET_WM_PID is 298
-[ 12/18/2021 00:45:01.036 atom_getter DEBUG ] Atom WM_NAME is 39
-[ 12/18/2021 00:45:01.036 atom_getter DEBUG ] Atom WM_CLASS is 67
-[ 12/18/2021 00:45:01.036 atom_getter DEBUG ] Atom WM_ICON_NAME is 37
-[ 12/18/2021 00:45:01.123 atom_getter DEBUG ] Atom WM_TRANSIENT_FOR is 68
-[ 12/18/2021 00:45:01.136 atom_getter DEBUG ] Atom WM_WINDOW_ROLE is 288
-[ 12/18/2021 00:45:01.223 atom_getter DEBUG ] Atom WM_CLIENT_LEADER is 283
-[ 12/18/2021 00:45:01.228 atom_getter DEBUG ] Atom WM_CLIENT_MACHINE is 36
-[ 12/18/2021 00:45:01.228 atom_getter DEBUG ] Atom _NET_ACTIVE_WINDOW is 289
-[ 12/18/2021 00:45:01.228 atom_getter DEBUG ] Atom _COMPTON_SHADOW is 430
-[ 12/18/2021 00:45:01.233 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE is 313
-[ 12/18/2021 00:45:01.236 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DESKTOP is 432
-[ 12/18/2021 00:45:01.324 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DOCK is 396
-[ 12/18/2021 00:45:01.326 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLBAR is 433
-[ 12/18/2021 00:45:01.331 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_MENU is 318
-[ 12/18/2021 00:45:01.332 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_UTILITY is 322
-[ 12/18/2021 00:45:01.332 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_SPLASH is 434
-[ 12/18/2021 00:45:01.338 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DIALOG is 315
-[ 12/18/2021 00:45:01.425 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NORMAL is 319
-[ 12/18/2021 00:45:01.435 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DROPDOWN_MENU is 317
-[ 12/18/2021 00:45:01.435 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_POPUP_MENU is 320
-[ 12/18/2021 00:45:01.437 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLTIP is 321
-[ 12/18/2021 00:45:01.438 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NOTIFICATION is 435
-[ 12/18/2021 00:45:01.442 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_COMBO is 314
-[ 12/18/2021 00:45:01.442 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DND is 316
-[ 12/18/2021 00:45:01.442 atom_getter DEBUG ] Atom _NET_WM_STATE is 300
-[ 12/18/2021 00:45:01.442 atom_getter DEBUG ] Atom _NET_WM_STATE_FULLSCREEN is 303
-[ 12/18/2021 00:45:01.443 atom_getter DEBUG ] Atom _NET_WM_BYPASS_COMPOSITOR is 436
-[ 12/18/2021 00:45:01.443 atom_getter DEBUG ] Atom UTF8_STRING is 282
-[ 12/18/2021 00:45:01.448 atom_getter DEBUG ] Atom C_STRING is 437
-[ 12/18/2021 00:45:01.451 atom_getter DEBUG ] Atom _GTK_FRAME_EXTENTS is 438
+[ 12/18/2021 22:32:48.599 atom_getter DEBUG ] Atom WM_TRANSIENT_FOR is 68
+[ 12/18/2021 22:32:48.599 atom_getter DEBUG ] Atom WM_WINDOW_ROLE is 288
+[ 12/18/2021 22:32:48.601 atom_getter DEBUG ] Atom WM_CLIENT_LEADER is 283
+[ 12/18/2021 22:32:48.601 atom_getter DEBUG ] Atom WM_CLIENT_MACHINE is 36
+[ 12/18/2021 22:32:48.601 atom_getter DEBUG ] Atom _NET_ACTIVE_WINDOW is 289
+[ 12/18/2021 22:32:48.601 atom_getter DEBUG ] Atom _COMPTON_SHADOW is 430
+Dec 18 22:32 : exception: Failed to access /home/fewcm/.config/mpd/playlists: No such file or directory
+Dec 18 22:32 : decoder: Decoder plugin 'wildmidi' is unavailable: configuration file does not exist: /etc/timidity/timidity.cfg
+[ 12/18/2021 22:32:48.689 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE is 313
+[ 12/18/2021 22:32:48.691 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DESKTOP is 432
+[ 12/18/2021 22:32:48.691 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DOCK is 396
+[ 12/18/2021 22:32:48.692 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLBAR is 433
+[ 12/18/2021 22:32:48.692 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_MENU is 318
+[ 12/18/2021 22:32:48.692 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_UTILITY is 322
+[ 12/18/2021 22:32:48.692 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_SPLASH is 434
+[ 12/18/2021 22:32:48.780 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DIALOG is 315
+[ 12/18/2021 22:32:48.780 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NORMAL is 319
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DROPDOWN_MENU is 317
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_POPUP_MENU is 320
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLTIP is 321
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NOTIFICATION is 435
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_COMBO is 314
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DND is 316
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_STATE is 300
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_STATE_FULLSCREEN is 303
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _NET_WM_BYPASS_COMPOSITOR is 436
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom UTF8_STRING is 282
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom C_STRING is 437
+[ 12/18/2021 22:32:48.791 atom_getter DEBUG ] Atom _GTK_FRAME_EXTENTS is 438
+[ 12/18/2021 22:32:48.793 atom_getter DEBUG ] Atom COMPTON_VERSION is 439
+[ 12/18/2021 22:32:48.793 atom_getter DEBUG ] Atom _NET_WM_CM_S0 is 293
+[ 12/18/2021 22:32:48.793 init_overlay DEBUG ] overlay = 0x0000029e
+[ 12/18/2021 22:32:48.800 file_watch_init DEBUG ] Starting watching for file changes
+[ 12/18/2021 22:32:48.800 file_watch_add DEBUG ] Adding "/home/fewcm/.config/picom/picom.conf" to watched files
+[ 12/18/2021 22:32:48.807 add_win DEBUG ] Adding window 0x00800001
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x0040001d
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x00400035
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x0040001e
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x00400044
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x00600001
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x01200004
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x01000001
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x01800001
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x01600001
+[ 12/18/2021 22:32:48.808 add_win DEBUG ] Adding window 0x01400001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] Initial stack:
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x01400001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x01600001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x01800001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x01000001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x01200004
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x00600001
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x00400044
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x0040001e
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x00400035
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x0040001d
+[ 12/18/2021 22:32:48.808 session_init DEBUG ] 0x00800001
+polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/usr/share/fonts/TTF/MaterialDesignIconsDesktop.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-[ 12/18/2021 00:45:01.453 atom_getter DEBUG ] Atom COMPTON_VERSION is 439
-[ 12/18/2021 00:45:01.453 atom_getter DEBUG ] Atom _NET_WM_CM_S0 is 293
-[ 12/18/2021 00:45:01.461 init_overlay DEBUG ] overlay = 0x0000029e
-[ 12/18/2021 00:45:01.462 file_watch_init DEBUG ] Starting watching for file changes
-[ 12/18/2021 00:45:01.462 file_watch_add DEBUG ] Adding "/home/fewcm/.config/picom/picom.conf" to watched files
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/usr/share/fonts/TTF/MaterialDesignIconsDesktop.ttf)
 polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x00600001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x0040001d
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x00400035
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x0040001e
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x0040006d
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x00a00001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x00800001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x02000001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x01800001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x01200004
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x01400001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x01a00001
-[ 12/18/2021 00:45:01.477 add_win DEBUG ] Adding window 0x01e00001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] Initial stack:
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x01e00001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x01a00001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x01400001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x01200004
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x01800001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x02000001
-[ 12/18/2021 00:45:01.477 session_init DEBUG ] 0x00800001
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x00a00001
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x0040006d
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x0040001e
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x00400035
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x0040001d
-[ 12/18/2021 00:45:01.478 session_init DEBUG ] 0x00600001
+polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
