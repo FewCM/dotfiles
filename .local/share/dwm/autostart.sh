@@ -81,7 +81,7 @@ start greenclip daemon &
 xset -dpms &
 start ibus-daemon -drxR
 
-start mpd &
+#start mpd &
 #start mpDris2 &
 start playerctld daemon &
 #potifyd --no-daemon  --autoplay &
