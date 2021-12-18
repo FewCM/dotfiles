@@ -3,12 +3,12 @@
 /.**
 
 *.git/
-*MyArxh*
+*MyArxh
 *.zwc
 *.uuid
-*tmp**
-*.log**
-*.bak**
+*tmp
+*.log
+*.bak
 
 !/Pictures/
 !/Pictures/**

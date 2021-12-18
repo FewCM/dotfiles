@@ -7,7 +7,6 @@ czkawka-gui-bin
 firedm
 google-chrome
 i3lock-color
-jdownloader2
 lssecret-git
 microsoft-edge-stable-bin
 mopidy-alsamixer
