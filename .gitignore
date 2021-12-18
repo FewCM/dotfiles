@@ -19,6 +19,7 @@
 
 !.bash_logout
 !.ssh/
+!.ssh/**
 !.bash_profile
 !.bashrc
 !.dmrc
