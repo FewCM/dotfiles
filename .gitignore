@@ -18,6 +18,7 @@
 !/Pictures/**
 
 !.bash_logout
+!.ssh/
 !.bash_profile
 !.bashrc
 !.dmrc
