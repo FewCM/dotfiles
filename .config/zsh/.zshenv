@@ -38,9 +38,6 @@ export USERXSESSIONRC="$XDG_CACHE_HOME/X11/xsessionrc"
 export ALTUSERXSESSION="$XDG_CACHE_HOME/X11/Xsession"
 export ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 
-export GCM_CREDENTIAL_STORE=gpg
-export GCM_GITHUB_AUTHMODES="pat"
-
 # aurutils
 export AUR_REPO=my_repo
 export AUR_DBROOT="/home/fewcm/Git/my_repo/x86_64"
@@ -66,7 +63,6 @@ export npm_config_prefix="$XDG_DATA_HOME/npm"
 # General System Conf{{{2
 export COLORTERM=truecolor
 #export TERM="xterm-256color"
-export OPENCV_LOG_LEVEL=ERROR # Hide nonimportant errors for howdy
 
 export EDITOR=micro
 export VISUAL=micro
@@ -75,7 +71,7 @@ export SYSTEMD_EDITOR=$EDITOR # for systemctl
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 #export LESS="-R " # colorize output
-export LESS="-iRX --mouse --wheel-lines 2 --status-column --LONG-PROMPT --quit-on-intr --no-histdups"
+export LESS="-iRXS --mouse --wheel-lines 2 --status-column --LONG-PROMPT --quit-on-intr --no-histdups"
 export LESSHISTFILE=-
 export LESSOPEN='|~/.local/bin/lessfilter %s'
 # }}}
@@ -92,24 +88,25 @@ export LESS_TERMCAP_se="$(printf '%b' '[0m')"
 
 export EXA_ICON_SPACING=1
 ## ==== extended EXA_COLORS: ====
-# no=00:fi=00:di=38;5;111:ln=38;5;81:pi=38;5;43:bd=38;5;212:\
-# cd=38;5;225:or=30;48;5;202:ow=38;5;75:so=38;5;177:su=36;48;5;63:ex=38;5;156:\
-# mi=38;5;115:*.exe=38;5;156:*.bat=38;5;156:*.tar=38;5;204:*.tgz=38;5;205:\
-# *.tbz2=38;5;205:*.zip=38;5;206:*.7z=38;5;206:*.gz=38;5;205:*.bz2=38;5;205:\
-# *.rar=38;5;205:*.rpm=38;5;173:*.deb=38;5;173:*.dmg=38;5;173:\
-# *.jpg=38;5;141:*.jpeg=38;5;147:*.png=38;5;147:\
-# *.mpg=38;5;151:*.mpeg=38;5;151:*.avi=38;5;151:*.mov=38;5;216:*.wmv=38;5;216:\
-# *.mp4=38;5;217:*.mkv=38;5;216:*.flac=38;5;223:*.mp3=38;5;218:*.wav=38;5;213:\
-# *akefile=38;5;176:*.pdf=38;5;253:*.ods=38;5;224:*.odt=38;5;146:\
-# *.doc=38;5;224:*.xls=38;5;146:*.docx=38;5;224:*.xlsx=38;5;146:\
-# *.epub=38;5;152:*.mobi=38;5;105:*.m4b=38;5;222:*.conf=38;5;121:\
-# *.md=38;5;224:*.markdown=38;5;224:*README=38;5;224:*.ico=38;5;140:\
-# *.iso=38;5;205"
+#export EXA_COLORS="no=00:fi=00:di=38;5;111:ln=38;5;81:pi=38;5;43:bd=38;5;212:\
+ #cd=38;5;225:or=30;48;5;202:ow=38;5;75:so=38;5;177:su=36;48;5;63:ex=38;5;156:\
+ #mi=38;5;115:*.exe=38;5;156:*.bat=38;5;156:*.tar=38;5;204:*.tgz=38;5;205:\
+ #*.tbz2=38;5;205:*.zip=38;5;206:*.7z=38;5;206:*.gz=38;5;205:*.bz2=38;5;205:\
+ #*.rar=38;5;205:*.rpm=38;5;173:*.deb=38;5;173:*.dmg=38;5;173:\
+ #*.jpg=38;5;141:*.jpeg=38;5;147:*.png=38;5;147:\
+ #*.mpg=38;5;151:*.mpeg=38;5;151:*.avi=38;5;151:*.mov=38;5;216:*.wmv=38;5;216:\
+ #*.mp4=38;5;217:*.mkv=38;5;216:*.flac=38;5;223:*.mp3=38;5;218:*.wav=38;5;213:\
+ #*akefile=38;5;176:*.pdf=38;5;253:*.ods=38;5;224:*.odt=38;5;146:\
+ #*.doc=38;5;224:*.xls=38;5;146:*.docx=38;5;224:*.xlsx=38;5;146:\
+ #*.epub=38;5;152:*.mobi=38;5;105:*.m4b=38;5;222:*.conf=38;5;121:\
+ #*.md=38;5;224:*.markdown=38;5;224:*README=38;5;224:*.ico=38;5;140:\
+ #*.iso=38;5;205"
 
 # History file configuration
 export HISTFILE="$HOME/.config/zsh/history"
 export HISTSIZE=68400
 export SAVEHIST=$((HISTSIZE/2))
+#HISTORY_IGNORE='([bf]g *|cd ..|l[alsh]#( *)#|less *|vim# *)'
 export HISTORY_IGNORE="(ls|pwd|zsh|exit)"
 # Corrections
 export CORRECT_IGNORE_FILE='.*'

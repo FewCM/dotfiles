@@ -161,6 +161,7 @@ mlocate
 modemmanager
 mopidy
 moreutils
+most
 mpc
 mpd
 mpdris2

@@ -34,7 +34,7 @@ reload(){
 function zsh_stats() {
   fc -l 1 \
     | awk '{ CMD[$2]++; count++; } END { for (a in CMD) print CMD[a] " " CMD[a]*100/count "% " a }' \
-    | grep -v "./" | sort -nr | head -n20 | column -c3 -s " " -t | nl
+    | grep -v "./" | sort -nr | head -n100 | column -c3 -s " " -t | nl
 }
 #
 
@@ -68,7 +68,7 @@ function ytdl() {
 }
 
 function fp() {
-printf "$(pacman --color always "${@:--Ss}" \
+printf "$(yay "${@:--Sslq}" \
 	| sed 'N;s/\n//' \
 	| fzf -m --ansi --preview 'pacman -Si {1}' \
 	| sed 's/ .*//')\n"
@@ -210,7 +210,7 @@ function which-cat() {
 		# if the file is readable
 		if [[ -r "${COMMAND_OUTPUT}" ]]; then
 			if iconv --from-code="utf-8" --to-code="utf-8" "${COMMAND_OUTPUT}" >/dev/null 2>&1; then
-				command cat "${COMMAND_OUTPUT}"
+				command bat "${COMMAND_OUTPUT}"
 			else
 				file "${COMMAND_OUTPUT}"
 			fi
@@ -222,13 +222,6 @@ function which-cat() {
 		printf '%s\n' "${COMMAND_OUTPUT}" >&2
 	fi
 }
-
-function zsh_stats() {
-  fc -l 1 \
-    | awk '{ CMD[$2]++; count++; } END { for (a in CMD) print CMD[a] " " CMD[a]*100/count "% " a }' \
-    | grep -v "./" | sort -nr | head -20 | column -c3 -s " " -t | nl
-}
-
 
 function sfont() {
 	fc-cache

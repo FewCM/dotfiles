@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec "~/.config/rofi/bin/$(ls ~/.config/rofi/bin | rofi -dmenu -p "")"

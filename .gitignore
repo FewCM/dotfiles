@@ -7,7 +7,7 @@
 *.zwc
 *.uuid
 *tmp
-*.log
+.log
 *.bak
 *socket
 *.socket
@@ -46,6 +46,7 @@ run/user/1000/geany/geany_socket.d64852c1
 /.local/share/**
 !/.local/share/dwm/
 !/.local/share/dwm/**
+/.local/share/dwm/*.log
 !/.local/share/fonts/
 !/.local/share/fonts/**
 !/.local/share/nemo/
