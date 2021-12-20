@@ -6,6 +6,9 @@ alias pass='nocorrect pass'
 alias cat=bat
 ##alias
 alias rm='rm -I '
+alias rmr="rm -rf"
+alias mkdir="mkdir -pv"
+
 
 # Linux specific aliases, work on both MacOS and Linux.
 alias pbcopy='xclip -selection clipboard'

@@ -15,8 +15,8 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # A binary Zsh module which transparently and automatically compiles sourced scripts
-module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
-zmodload zdharma_continuum/zinit &>/dev/null
+#module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
+#zmodload zdharma_continuum/zinit &>/dev/null
 
 #eval $(gnome-keyring-daemon --components=secrets,pksc11 --start --foreground)
 zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh 
@@ -29,31 +29,56 @@ eval $(keychain --agents gpg  --eval B78563BE  --noask --quiet --absolute --dir 
 
 typeset -F4 SECONDS=0
 
-zinit ice wait lucid multisrc"01-zopts.zsh \
+zinit ice wait lucid multisrc"00-bootstrap.zsh \
+01-zopts.zsh \
 02-zcomple.zsh \
 03-zkbd.zsh \
 04-aliases.zsh \
 05-alias-reveal.zsh \
 06-functions.zsh \
-08-autoload.zsh 
 07-fzf.zsh \
+08-autoload.zsh \
 09-bash.command-not-found" 
 zinit light $ZDOTDIR/zlib
 
 zinit light-mode for \
         zdharma-continuum/zinit-annex-patch-dl \
         zdharma-continuum/zinit-annex-submods \
+        zdharma-continuum/zinit-annex-patch-dl \
         NICHOLAS85/z-a-linkman \
         NICHOLAS85/z-a-linkbin
-        
+
+#zinit ice load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]'  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
+#zinit load starship/starship
+
+zinit ice  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
+zinit load starship/starship
+
+zinit pack'binary+keys' for fzf
+
 zinit ice depth'1' lucid
 zinit light bigH/auto-sized-fzf
 
-# colors {{{
-zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-    atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-    atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
-zinit light trapd00r/LS_COLORS
+## colors {{{
+#zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
+    #atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+    #atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
+#zinit light trapd00r/LS_COLORS
+
+zinit \
+    atclone'[[ -z ${commands[dircolors]} ]] &&
+      local P=${${(M)OSTYPE##darwin}:+g};
+      ${P}sed -i '\''/txt/c\txt 38;5;172'\'' LS_COLORS;
+      ${P}dircolors -b LS_COLORS >! clrs.zsh' \
+    atload'zstyle '\'':completion:*:default'\'' list-colors "${(s.:.)LS_COLORS}";' \
+    atpull'%atclone' \
+    git \
+    id-as'trapd00r/LS_COLORS' \
+    lucid \
+    nocompile'!' \
+    pick'clrs.zsh' \
+    reset \
+  for @trapd00r/LS_COLORS
 
 zinit light "chrissicool/zsh-256color"
 # }}}
@@ -61,26 +86,7 @@ zinit light "chrissicool/zsh-256color"
 zinit ice wait'0a' lucid
 zinit light mafredri/zsh-async
 
-zinit ice load'![[ $MYPROMPT = 1 ]]' unload'![[ $MYPROMPT != 1 ]]' nocd atload'source $ZDOTDIR/zlib/plugin_option/prompt.zsh' lucid
-zinit light spaceship-prompt/spaceship-prompt
-
-#zinit depth'3' load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]' as'program' for \
-	#pick'target/release/starship' \
-	#atclone'cargo build --release ; starship completions zsh > _starship ; cargo clean' atpull'%atclone' \
-	#atinit'eval $(starship init zsh); export STARSHIP_CONFIG=~/.config/starship/config.toml' \
-	#'@starship/starship'
-
-zinit ice load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]'  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
-zinit load starship/starship
-#as"command" from"gh-r"  pick"./starship" atclone"eval $(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"  
-#zinit light starship/starship
-
-	#as'command'  from'gh-r'  \
-	#atclone'starship completions zsh > _starship ; eval $(starship init zsh)' atpull'%atclone' \
-	#atload'export STARSHIP_CONFIG=~/.config/starship/config.toml' lucid \
-#zinit light starship/starship
-
-zinit ice wait'0a' src"$ZDOTDIR/zlib/plugin_option/zsh-autosuggestions.zsh" atload'!_zsh_autosuggest_start; _zsh_autosuggest_setting' lucid
+zinit ice wait'0a' atload'!_zsh_autosuggest_start; _zsh_autosuggest_setting' lucid
 zinit light zsh-users/zsh-autosuggestions
 
 zinit ice wait'0a' blockf lucid atpull'zinit creinstall -q .'
@@ -94,8 +100,8 @@ zinit lucid from'gh-r' for \
   atpull'%atclone' \
   '@sharkdp/bat' 
 
-zinit ice lucid as'command' pick'target/release/exa' atclone'cargo build --release' atpull'%atclone'
-zinit light FewCM/exa
+zinit ice lucid id-as"ogham/exa_completions" pick"/dev/null" from'gh-r'  atclone'cp -vf completions/exa.zsh _exa; cp -vf man/exa.1 "$ZINIT[MAN_DIR]/man1"; cp -vf man/exa_colors.5 "$ZINIT[MAN_DIR]/man5"' atpull'%atclone'
+zinit light ogham/exa 
 
 # FD
 zinit ice lucid wait'0b' as'command' from"gh-r" mv"fd* -> fd" pick"fd/fd" atclone'cp -vf fd/fd.1 "$ZINIT[MAN_DIR]/man1"' atpull'%atclone'
@@ -108,20 +114,6 @@ zinit light BurntSushi/ripgrep
 zinit ice wait'0d' atload'ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(autopair-insert)' lucid     
 zinit light hlissner/zsh-autopair 
 
-# FZF
-zinit ice wait'0b' as'command' lucid from'gh-r' 
-zinit light junegunn/fzf
-
-
- # atinit"source $ZHOMEDIR/rc/pluginconfig/zsh-plugin-fzf-finder_atinit.zsh"  
-# FZF
-#zinit ice wait'0e' lucid from'gh-r' as'command' atinit'source $ZDOTDIR/zlib/plugin_option/fzf.zsh'
-#zinit light junegunn/fzf
-
-# BIND MULTIPLE WIDGETS USING FZF
-zinit ice wait'0e' lucid multisrc"shell/{completion,key-bindings}.zsh" id-as"junegunn/fzf_completions" pick"/dev/null"
-zinit light junegunn/fzf
-
 zinit light agkozak/zsh-z
 zinit light agkozak/zhooks
 
@@ -133,13 +125,8 @@ zinit light jgogstad/passwordless-history
 zinit ice wait'1a' lucid src'fzf-extras.sh' lucid
 zinit light atweiden/fzf-extras
 
-zinit ice as"program" pick"$ZPFX/bin/git-*" src"etc/git-extras-completion.zsh" make"PREFIX=$ZPFX"
+zinit ice wait'1' as"program" pick"$ZPFX/bin/git-*" src"etc/git-extras-completion.zsh" make"PREFIX=$ZPFX" lucid
 zinit light tj/git-extras
-
-# FZF-TAB
-zinit ice wait'1b' atload'source $ZDOTDIR/zlib/plugin_option/fzf-tab.zsh' lucid
-zinit light Aloxaf/fzf-tab
-
 
 #zinit ice wait'0b' lucid as"command" pick"dirhist" src'directory-history.plugin.zsh' atclone"sed -i 's|.directory_history|.config\/zsh\/dir_history|g' directory-history.plugin.zsh ; sed -i 's|.directory_history|.config\/zsh\/dir_history|g' dirhist" 
 #zinit light tymm/zsh-directory-history
@@ -154,7 +141,6 @@ zinit light gopasspw/gopass
 #zinit ice depth=1 atload'source $ZDOTDIR/zlib/plugin_option/zsh-vi-mode.zsh' lucid
 #zinit light jeffreytse/zsh-vi-mode
 
-source $ZDOTDIR/zlib/plugin_option/zsh-history-substring-search.zsh
 zinit ice wait'0b' atload'!_zsh-history-substring-search-setting'  lucid
 zinit light zsh-users/zsh-history-substring-search
 
@@ -162,7 +148,6 @@ _per-directory-history-settings()
 {
 	export PER_DIRECTORY_HISTORY_BASE=$ZDOTDIR/.zsh_history_dirs
 }
-
 
 zinit wait'2' lucid \
   atinit"export HISTORY_START_WITH_GLOBAL=true ;  _per-directory-history-settings" \
@@ -172,13 +157,33 @@ zinit wait'2' lucid \
 #zinit ice depth'1' lucid wait'0' atinit'ZINIT[COMPINIT_OPTS]=-C;_zpcompinit_custom; zpcdreplay'
 #zinit light zsh-users/zsh-syntax-highlighting
 
-zinit wait lucid for \
- atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-    zdharma-continuum/fast-syntax-highlighting 
+ # initialization
+_zpcompinit_custom() {
+  setopt extendedglob local_options
+  autoload -Uz compinit
+  local zcd=${ZDOTDIR/.zcompdump}
+  local zcdc="$zcd.zwc"
+  # Compile the completion dump to increase startup speed, if dump is newer or doesn't exist,
+  # in the background as this is doesn't affect the current session
+  if [[ -f "$zcd"(#qN.m+1) ]]; then
+        compinit -i -d "$zcd"
+        { rm -f "$zcdc" && zcompile "$zcd" } &!
+  else
+        compinit -C -d "$zcd"
+        { [[ ! -f "$zcdc" || "$zcd" -nt "$zcdc" ]] && rm -f "$zcdc" && zcompile "$zcd" } &!
+  fi
+}
+
+zinit ice wait lucid for 
+zinit light zdharma-continuum/fast-syntax-highlighting 
+    
+# FZF-TAB
+zinit ice wait'2' lucid atload'_fzf_tab_settings' atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" 
+zinit light Aloxaf/fzf-tab
 
 chpwd() exa -h --git --icons --group-directories-first
 
-MYPROMPT=2
+#MYPROMPT=2
 
 #source $ZDOTDIR/.env
 

@@ -55,8 +55,9 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1 &
 # polkit agent
 #polkit-dumb-agent &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#eval $(gnome-keyring-daemon --components ssh,secrets,pkcs11)
-#eval $(gnome-keyring-daemon --start)
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
+export $(gnome-keyring-daemon --start --components=pkcs11,secrets)
+start dbus-update-activation-environment --systemd DISPLAY
 
 
 #unset SSH_AGENT_PID
@@ -84,6 +85,7 @@ start ibus-daemon -drxR
 #start mpd &
 #start mpDris2 &
 start playerctld daemon &
+#start mopidy &
 #potifyd --no-daemon  --autoplay &
 #start xrandr --output HDMI-0 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 2560x0 --rotate normal &
 #start xrandr --output HDMI-1 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 2560x0 --rotate normal &

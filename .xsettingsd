@@ -1,4 +1,4 @@
-Net/ThemeName "Gruvbox-Material-Dark-Soft-red"
+Net/ThemeName "Gruvbox"
 Net/IconThemeName "Luna-Dark"
 Gtk/CursorThemeName "Bibata-Modern-Amber"
 Net/EnableEventSounds "0"
@@ -11,4 +11,4 @@ Xft/RGBA "rgb"
 Gtk/DialogsUseHeader 0
 Gtk/EnableAnimations 1
 Gtk/EnablePrimaryPaste 1
-Gtk/FontName "Noto Sans 11"
+Gtk/FontName "Cantarell 11"

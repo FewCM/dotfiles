@@ -3,10 +3,6 @@ name = FewCM
 email = sweewei.tham@gmail.com
 
 [color]
-branch = auto
-interactive = auto
-diff = auto
-status = auto
 ui = auto
 
 [color "branch"]
@@ -15,7 +11,7 @@ local = blue
 remote = green
 
 [color "diff"]
-meta = yellow
+meta = yellow bold
 frag = magenta bold
 old = red bold
 new = green bold
@@ -33,17 +29,22 @@ quotepath = off
 editor = code --wait
 whitespace = -trailing-space
 pager = diff-so-fancy | less --tabs=4 -RFX
+eol          = lf
 
 [i18n]
 logoutputencoding = utf8
 commitencoding = utf8
+
 [apply]
 whitespace = nowarn
+
 [push]
 default = current
+
 [pull]
 default = current
 rebase = false
+
 [alias]
 ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative
 ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [a:%an,c:%cn]" --decorate --numstat
@@ -120,14 +121,15 @@ zd = "!f() { \
 # TODO: make a single command that lists
 #       commits, tags, branches, remotes
 #       use in the fuzzy stuff
+
 [init]
 defaultBranch = main
+
 [filter "lfs"]
 clean = git-lfs clean -- %f
 smudge = git-lfs smudge -- %f
 process = git-lfs filter-process
 required = true
+
 [credential]
 helper = /home/fewcm/.local/bin/git_credentials_from_pass $@
-[include]
-	path = /tmp/tmphome/.config/git/gitconfig_shared

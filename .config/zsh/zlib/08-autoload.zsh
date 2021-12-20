@@ -12,7 +12,7 @@ autoload -Uz select-word-style
 select-word-style bash
 
 # zrecompile to compile some plugins
-autoload -Uz zrecompile
+#autoload -Uz zrecompile
 
 # Enable run-help module
 (( $+aliases[run-help] )) && unalias run-help
@@ -39,3 +39,11 @@ pastefinish() {
 
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
+
+# Ctrl-N - select directory to paste
+fzf-directory-select-and-insert() {
+  LBUFFER+="$(fzf-directory-selector)"
+  zle redisplay
+}
+zle -N fzf-directory-select-and-insert
+bindkey '^n' fzf-directory-select-and-insert

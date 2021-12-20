@@ -150,16 +150,9 @@ export DOTBARE_PREVIEW="cat -n {}"
 export DOTBARE_DIFF_PAGER="delta --diff-so-fancy --line-numbers"
 # }}}
 
+
 export PATH="$PATH:${$(find $HOME/.local/bin $HOME/.config/rofi/dwm/bin $HOME/.config/polybar/dwm/bin -type d -printf %p:)%%:}"
 typeset -U path PATH sudo_path cdpath fpath
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-#for file in $ZDOTDIR/.{extra,secret} ; do
-#	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-#done;
-#unset file;
 
 # https://github.com/sorin-ionescu/prezto/blob/master/runcoms/zshenv
 # Ensure that a non-login, non-interactive shell has a defined environment.

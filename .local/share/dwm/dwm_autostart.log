@@ -1,13 +1,13 @@
-ibus-daemon -drxR
+dbus-update-activation-environment --systemd DISPLAY
 wired -r
-indicator-sound-switcher
+ibus-daemon -drxR
 dwmremaps
-playerctld daemon
-dwmbar
-mpd
-dwmcomp
-setbg
+A wired socket exists; taking ownership.  Existing wired processes will not receive CLI calls.
+indicator-sound-switcher
 Acquired notification bus name.
+setbg
 unclutter
+dwmcomp
+dwmbar
 Polybar launched...
 DBus Init Success.

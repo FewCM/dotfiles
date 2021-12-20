@@ -43,7 +43,7 @@ export FZF_DEFAULT_BASIC="
 --no-height
 "
 
-export FZF_DEFAULT_COMMAND="fd . --hidden --follow --exclude '.git' --exclude 'node_modules'"
+export FZF_DEFAULT_COMMAND="fd . --hidden --follow --exclude '.git' --exclude 'node_modules' --ignore-file .gitignore"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_COLOR\
 $FZF_DEFAULT_BASIC\
 --preview='pistol {}'
