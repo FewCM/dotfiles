@@ -132,10 +132,8 @@ libportal
 libtool
 libusb-compat
 libxft-bgra
-linux
 linux-atm
 linux-firmware
-linux-headers
 linux-zen
 linux-zen-headers
 lnav
