@@ -17,6 +17,7 @@ nvidia-470xx-dkms
 nvidia-470xx-utils
 os-prober-btrfs
 pistol-git
+polybar-dwm-module
 repoctl
 skypeforlinux-stable-bin
 spotify
