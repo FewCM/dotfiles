@@ -1,3 +1,4 @@
+Gruvbox-Material-Dark-Soft-red
 alacritty
 alsa-plugins
 alsa-tools
@@ -65,6 +66,7 @@ fish
 flex
 font-manager-git
 fsarchiver
+fzf
 gcc
 geany
 geany-plugins
@@ -111,7 +113,6 @@ indicator-sound-switcher
 inetutils
 inotify-tools
 intel-ucode
-iptables-nft
 ipw2100-fw
 ipw2200-fw
 irssi
@@ -219,7 +220,6 @@ pkgfile
 playerctl
 polkit
 polkit-gnome
-polybar-dwm-module-git
 ppp
 pptpclient
 profile-sync-daemon
@@ -253,6 +253,7 @@ scons
 screen
 scrot
 sdparm
+seahorse
 sg3_utils
 shellcheck-bin
 smartmontools
