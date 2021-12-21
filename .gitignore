@@ -51,8 +51,6 @@ run/user/1000/geany/geany_socket.d64852c1
 !/.local/share/fonts/**
 !/.local/share/nemo/
 !/.local/share/nemo/**
-!/.local/share/gnupg/
-!/.local/share/gnupg/**
 
 ## config
 !/.config/
