@@ -11,6 +11,7 @@ export KEYTIMEOUT=1
 # LANGUAGE must be set by en_US
 export LANGUAGE="en_US.UTF-8"
 export LANG="${LANGUAGE}"
+export LC_ALL=en_US.UTF-8
 
 # ZSH variables: {{{1
 export ZDOTDIR="$HOME/.config/zsh"

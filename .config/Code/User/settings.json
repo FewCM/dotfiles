@@ -51,5 +51,6 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.emptyWindow": false,
+    "bracketPairColorizer.depreciation-notice": false,
     
 }

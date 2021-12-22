@@ -148,9 +148,9 @@ font-2 = "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=1
 ;   modules-right = ipc clock
 
 modules-left = sep1 sysmenu sep2 term sep folder sep browser sep editor sep screenshot sep asroot sep widowslist sep layout sep killclient sep refresh
-modules-center = spotify spotify-prev spotify-play-pause spotify-next
+modules-center = 
 modules-right = updates sep pulseaudio-control sep wireless-network sep wired-network sep time  sep1
-
+;;spotify spotify-prev spotify-play-pause spotify-next
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 ; The separator will be inserted between the output of each module

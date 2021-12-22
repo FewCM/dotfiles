@@ -19,9 +19,9 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 #fi
 
 #polybar --reload top0 -c ~/.config/polybar/config &
-polybar --reload bottom0 -c  $HOME/.config/polybar/$DESKTOP_SESSION/config &
+polybar --reload bottom0 -c  $HOME/.config/polybar/dwm/config &
 
 #polybar --reload top1 -c ~/.config/polybar/config &
-polybar --reload bottom1 -c $HOME/.config/polybar/$DESKTOP_SESSION/config &
+polybar --reload bottom1 -c $HOME/.config/polybar/dwm/config &
 
 echo "Polybar launched..."

@@ -38,7 +38,7 @@ xrdb ~/.Xresources
 ## Autostart -------------------------------#
 
 # Kill already running process
-_ps=(compton blueberry-tray picom dunst xsettingsd wired)
+_ps=(compton blueberry-tray picom dunst xsettingsd wired polybar)
 for _prs in "${_ps[@]}"; do
     if [[ $(pidof ${_prs}) ]]; then
         killall -9 ${_prs}
@@ -55,10 +55,11 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1 &
 # polkit agent
 #polkit-dumb-agent &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 start dbus-update-activation-environment --systemd DISPLAY
 
+start dwmbar &
+start playerctld daemon &
 
 #unset SSH_AGENT_PID
 #if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
@@ -84,7 +85,8 @@ start ibus-daemon -drxR
 
 #start mpd &
 #start mpDris2 &
-start playerctld daemon &
+#start dwmbar &
+#start playerctld daemon &
 #start mopidy &
 #potifyd --no-daemon  --autoplay &
 #start xrandr --output HDMI-0 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 2560x0 --rotate normal &
@@ -94,7 +96,7 @@ start playerctld daemon &
 
 #start dwmstatusbar &
 #xsetroot -name "$(printf '\x01 CPU |\x02 CPU |\x03 Battery  |\x04 volume |\x05 cPU |\x06 battery')"
-start dwmbar &
+
 start dwmremaps &
 start dwmcomp &
 start indicator-sound-switcher &

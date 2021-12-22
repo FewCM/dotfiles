@@ -1,6 +1,5 @@
 aurutils
 authy
-btdu-bin
 btrfs-du
 czkawka-gui-bin
 firedm
@@ -18,9 +17,11 @@ nvidia-470xx-utils
 os-prober-btrfs
 pistol-git
 polybar-dwm-module
+python-spotdl
 repoctl
 skypeforlinux-stable-bin
 spotify
+ttf-mplus
 ventoy-bin
 visual-studio-code-bin
 ydotool
