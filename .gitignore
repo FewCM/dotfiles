@@ -12,6 +12,9 @@
 *socket
 *.socket
 
+/.local/share/dotfiles/home
+/.local/share/dotfiles/home/**
+
 /home/fewcm/.config/geany/geany_socket_MyArxh__0
 run/user/1000/geany/geany_socket.d64852c1
 
@@ -52,6 +55,7 @@ run/user/1000/geany/geany_socket.d64852c1
 !/.local/share/nemo/
 !/.local/share/nemo/**
 !/.local/share/dotfiles
+
 
 ## config
 !/.config/
