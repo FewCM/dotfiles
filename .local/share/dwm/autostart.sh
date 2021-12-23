@@ -55,7 +55,7 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1 &
 # polkit agent
 #polkit-dumb-agent &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-export $(gnome-keyring-daemon --start --components=pkcs11,secrets)
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 start dbus-update-activation-environment --systemd DISPLAY
 
 start dwmbar &

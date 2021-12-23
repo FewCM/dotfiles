@@ -26,7 +26,10 @@ zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sudo/sudo.p
 #zstyle :omz:plugins:keychain options --quiet --absolute --dir "$XDG_RUNTIME_DIR"/keychain
 #zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/keychain/keychain.plugin.zsh
 #eval_keychain()
+
+if [[ $(whoami) == fewcm ]]; then
 eval $(keychain --agents gpg  --eval B78563BE  --noask --quiet --absolute --dir "$XDG_RUNTIME_DIR"/keychain)
+fi
 
 typeset -F4 SECONDS=0
 

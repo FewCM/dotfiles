@@ -8,8 +8,8 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export DOTFILES_TREE="$HOME"
-export DOTFILES_DIR="$HOME/.local/share/dotfiles/home"
-export DOTFILES_BACKUP_DIR="$HOME/.local/share/dotfiles/home/home_backup"
+DOTFILES_TREE="$HOME"
+DOTFILES_DIR="$HOME/.local/share/dotfiles/home"
+DOTFILES_BACKUP_DIR="$HOME/.local/share/dotfiles/home/home_backup"
+DOTFILES_REMOTE_URL="https://github.com/FewCM/dotfiles.git"
 
-alias dots='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles/home --work-tree=$HOME'
