@@ -60,7 +60,6 @@ fatresize
 ffmpeg
 ffmpegthumbnailer
 firewalld
-fish
 flex
 font-manager-git
 fsarchiver

@@ -55,7 +55,7 @@ zinit light-mode for \
 #zinit ice load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]'  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
 #zinit load starship/starship
 
-zinit ice  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
+zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
 zinit load starship/starship
 
 zinit pack'binary+keys' for fzf
@@ -123,8 +123,8 @@ zinit light BurntSushi/ripgrep
 zinit ice wait'0d' atload'ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(autopair-insert)' lucid     
 zinit light hlissner/zsh-autopair 
 
+zinit ice wait'0e' atload'zstyle ":completion:*" menu select' lucid     
 zinit light agkozak/zsh-z
-zinit light agkozak/zhooks
 
 zinit ice wait'1a' lucid  atload'bindkey "^d" dotbare-fedit' 
 zinit light kazhala/dotbare
