@@ -24,6 +24,7 @@ run/user/1000/geany/geany_socket.d64852c1
 !.ssh/
 !.ssh/**
 !.bash_profile
+!.bash_history
 !.bashrc
 !.dmrc
 !.editorconfig
