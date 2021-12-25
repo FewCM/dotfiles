@@ -158,13 +158,7 @@ mpd
 mpdris2
 mpv
 mtools
-myarch-gtk-theme-adapta
-myarch-gtk-theme-arc
-myarch-gtk-theme-dracula
-myarch-gtk-theme-groot
 myarch-gtk-theme-gruvbox
-myarch-gtk-theme-nordic
-myarch-gtk-theme-rick
 namcap
 nano
 nbd
@@ -173,7 +167,7 @@ ncmpcpp
 ndisc6
 nemo-fileroller
 nemo-meld-compare
-nemo-preview
+nemo-terminal
 nerd-fonts-fontconfig
 nerd-fonts-hack
 nethogs

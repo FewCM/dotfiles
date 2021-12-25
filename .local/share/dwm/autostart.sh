@@ -51,9 +51,6 @@ done
 #start pulseaudio-control.bash listen &
 pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1 &
 
-#start blueberry-tray &
-# polkit agent
-#polkit-dumb-agent &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 start dbus-update-activation-environment --systemd DISPLAY
@@ -61,56 +58,24 @@ start dbus-update-activation-environment --systemd DISPLAY
 start dwmbar &
 start playerctld daemon &
 
-#unset SSH_AGENT_PID
-#if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-#    export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-#fi
-#start gpg-connect-agent updatestartuptty /bye >/dev/null
-
 # Lauch notification daemon
 #start dunst -c $HOME/.config/dunst/dunstrc &
 start wired -r &
 start greenclip daemon &
-
-#start udiskie -c $HOME/.config/udiskie/config.yml &
-# Lauch xsettingsd daemon
-#start xsettingsd &
-#start lxappearance &
-#start amule &
 
 # Enable power management
 #start xfce4-power-manager &
 xset -dpms &
 start ibus-daemon -drxR
 
-#start mpd &
-#start mpDris2 &
-#start dwmbar &
-#start playerctld daemon &
-#start mopidy &
-#potifyd --no-daemon  --autoplay &
+
 #start xrandr --output HDMI-0 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 2560x0 --rotate normal &
 #start xrandr --output HDMI-1 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 2560x0 --rotate normal &
 
 # Start dwm scripts
-
-#start dwmstatusbar &
-#xsetroot -name "$(printf '\x01 CPU |\x02 CPU |\x03 Battery  |\x04 volume |\x05 cPU |\x06 battery')"
-
 start dwmremaps &
 start dwmcomp &
 start indicator-sound-switcher &
 start unclutter &
-#start clipmenud &
-# set default font
-#xfconf-query --channel xsettings --property /Gtk/FontName --set "JetBrains Mono Regular 11"
-# set default monospace font
-#xfconf-query --channel xsettings --property /Gtk/MonospaceFontName --set "JetBrains Mono Regular 11"
-
 # Restore wallpaper
 start setbg &
-
-#sleep 0.5
-#while true ; do
-#	dwm
-#done
