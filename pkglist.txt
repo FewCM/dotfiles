@@ -153,7 +153,6 @@ most
 mpc
 mpd
 mpdris2
-mpv
 mtools
 myarch-gtk-theme-adapta
 myarch-gtk-theme-gruvbox
