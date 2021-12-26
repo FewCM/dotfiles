@@ -63,13 +63,11 @@ firewalld
 flex
 font-manager-git
 fsarchiver
-fzf
 gcc
 geany
 geany-plugins
 git
 git-delta
-git-filter-repo
 git-lfs
 github-cli
 gnome-calculator
@@ -157,6 +155,7 @@ mpd
 mpdris2
 mpv
 mtools
+myarch-gtk-theme-adapta
 myarch-gtk-theme-gruvbox
 namcap
 nano
@@ -222,7 +221,6 @@ qt5ct
 ranger
 reflector
 reiserfsprogs
-repose
 rng-tools
 rofi
 rofi-greenclip
