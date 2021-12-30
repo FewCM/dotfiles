@@ -45,6 +45,7 @@
 /.local/share/dotfiles/home
 /.local/share/dotfiles/home/**
 /.local/share/dotfiles/home-backup
+/.local/share/dotfiles/home-backup/**
 
 ## config
 !/.config/

@@ -87,7 +87,7 @@
 /sys|3.2552696116369786|1638386734
 /usr/lib|11.489504162087359|1638392620
 /etc/zsh|1.6194557364425166|1631921358
-/home/fewcm/.config/zsh|409.03646389455469|1640887128
+/home/fewcm/.config/zsh|410.03646389455469|1640890522
 /home/fewcm/.local/bin/dwm|88.955645891540129|1640882715
 /etc/firewall|1.6194557364425166|1633956861
 /home/fewcm/Downloads/beau/rclone|1|1640840163
@@ -161,7 +161,7 @@
 /home/fewcm/.config/Kvantum|9.7167344186550988|1637968212
 /home/fewcm/.config/picom|7|1640647893
 /home/fewcm/.local/share/fonts/symbols|4.8583672093275494|1638225864
-/home/fewcm/.local/share/dotfiles/home|2|1640887066
+/home/fewcm/.local/share/dotfiles/home|3|1640890524
 /usr/share/pulseaudio|1.7201167092825767|1638392256
 /home/fewcm/.local/bin/dwm/dwmblocks|3.2389114728850332|1631099037
 /home/fewcm/Git/my_repo/pkg|14|1640873334
@@ -212,14 +212,14 @@
 /etc/logrotate.d|1.6194557364425166|1633956898
 /dev/disk/by-partuuid|1.6194557364425166|1633772704
 /var/lib/pacman/local/zziplib-0.13.72-1|1.6194557364425166|1633623918
-/home/fewcm/Git/suckless/dwm|46|1640886376
 /home/fewcm/.config/spotify/User Data/WidevineCdm|1|1638484128
+/home/fewcm/Git/suckless/dwm|48|1640890533
 /etc/tmpfiles.d|1.6194557364425166|1635227919
 /etc/sudoers.d|3.2389114728850332|1631952660
 /usr/share/psd|1.7201167092825767|1638392254
 /etc/X11/xinit/xinitrc.d|1.6194557364425166|1638095946
 /home/fewcm/.local/bin/dmenu|25.10156391485901|1631807247
-/home/fewcm/my_arch/cfg/scripts|12|1640886529
+/home/fewcm/my_arch/cfg/scripts|13|1640890530
 /home/fewcm/.local/share/zinit/plugins/starship---starship|2|1640426402
 /etc/pinentry|1.6194557364425166|1633956985
 /usr/share/snapper/config-templates|1.7201167092825767|1638392280
@@ -291,7 +291,7 @@
 /usr/share/zenity|1.7201167092825767|1638392308
 /home/fewcm/Documents/MS-DWM|13|1640816330
 /dev|4.8747253480794965|1638386728
-/home/fewcm/.local/share/dotfiles/home/info|2|1640886528
+/home/fewcm/.local/share/dotfiles/home/info|3|1640890529
 /dev/disk/by-label|1.6194557364425166|1633772691
 /home/fewcm/.local/share/nemo/scripts/File informations|1|1638711202
 /tmp|4.6194557364425162|1640194426
