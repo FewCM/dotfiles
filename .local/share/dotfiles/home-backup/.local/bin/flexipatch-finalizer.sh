@@ -294,13 +294,13 @@ if [[ $KEEP_FILES = 0 ]] || [[ $ECHO_COMMANDS = 1 ]]; then
 		fi
 	fi
 
-	#for FILE in $FILES_TO_DELETE ${DIRECTORY}/patches.def.h; do
-		#if [[ $ECHO_COMMANDS = 1 ]]; then
-			#echo "rm $FILE"
-		#else
-			#rm "$FILE"
-		#fi
-	#done
+	for FILE in $FILES_TO_DELETE ${DIRECTORY}/patches.def.h; do
+		if [[ $ECHO_COMMANDS = 1 ]]; then
+			echo "rm $FILE"
+		else
+			rm "$FILE"
+		fi
+	done
 
 	if [[ -f $DIRECTORY/README.md ]]; then
 		if [[ $ECHO_COMMANDS = 1 ]]; then

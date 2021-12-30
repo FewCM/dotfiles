@@ -1,9 +1,12 @@
+aurto
 aurutils
 authy
 btrfs-du
 czkawka-gui-bin
+find-the-command
 firedm
 google-chrome
+libxft-bgra-git
 lssecret-git
 microsoft-edge-stable-bin
 mopidy-alsamixer
@@ -12,6 +15,7 @@ mopidy-mpd
 mopidy-mpris
 mopidy-spotify
 mullvad-vpn-bin
+nerd-fonts-hack
 nvidia-470xx-dkms
 nvidia-470xx-utils
 os-prober-btrfs
@@ -24,6 +28,5 @@ spotify
 ttf-mplus
 ventoy-bin
 visual-studio-code-bin
-xinit-xsession
 ydotool
 zscroll-git

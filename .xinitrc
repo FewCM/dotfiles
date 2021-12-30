@@ -1,0 +1,1 @@
+/home/fewcm/.config/X11/xinitrc

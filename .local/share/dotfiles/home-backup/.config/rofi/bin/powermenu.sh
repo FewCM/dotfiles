@@ -9,8 +9,8 @@ rofi_command="rofi -theme $HOME/.config/rofi/themes/powermenu.rasi"
 #rofi_command="/home/fewcm/Projects/rofi/build/rofi -theme ~/.config/rofi/themes/powermenu.rasi"
 
 uptime=$(uptime -p | sed -e 's/up //g')
-cpu=$(sh $HOME/.config/rofibin/usedcpu.sh)
-memory=$(sh $HOME/.config/rofibin/usedram.sh)
+cpu=$(sh $HOME/.config/rofi/bin/usedcpu.sh)
+memory=$(sh $HOME/.config/rofi/bin/usedram.sh)
 
 # Options
 shutdown=""

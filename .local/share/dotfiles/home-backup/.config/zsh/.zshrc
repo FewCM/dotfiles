@@ -15,8 +15,8 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # A binary Zsh module which transparently and automatically compiles sourced scripts
-#module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
-#zmodload zdharma_continuum/zinit &>/dev/null
+module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
+zmodload zdharma_continuum/zinit &>/dev/null
 
 #eval $(gnome-keyring-daemon --components=secrets,pksc11 --start --foreground)
 zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
@@ -58,7 +58,7 @@ zinit light-mode for \
 #zinit ice load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]'  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
 #zinit load starship/starship
 
-zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
+zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" > /dev/null 2>&1 ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
 zinit load starship/starship
 
 zinit pack'binary+keys' for fzf

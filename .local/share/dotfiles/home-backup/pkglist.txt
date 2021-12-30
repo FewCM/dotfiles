@@ -29,6 +29,7 @@ calc
 calcurse
 chafa
 cloud-init
+cpio
 crda
 ctags
 curl
@@ -119,7 +120,6 @@ libfido2
 libportal
 libtool
 libusb-compat
-libxft-bgra
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lightdm-webkit2-greeter
@@ -128,6 +128,7 @@ linux-firmware
 linux-zen
 linux-zen-headers
 lnav
+logwatch
 lsb-release
 lsscsi
 lvm2
@@ -164,7 +165,6 @@ nemo-fileroller
 nemo-meld-compare
 nemo-terminal
 nerd-fonts-fontconfig
-nerd-fonts-hack
 nethogs
 networkmanager
 networkmanager-openvpn
@@ -197,7 +197,6 @@ phonon-qt5-gstreamer
 php
 picom-ibhagwan-git
 pkgconf
-pkgfile
 playerctl
 polkit
 polkit-gnome

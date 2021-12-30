@@ -26,7 +26,8 @@
                     "visible": false
                 },
                 "iec958-stereo-output": {
-                    "preferred_profile": "output:iec958-stereo+input:iec958-stereo"
+                    "preferred_profile": "output:iec958-stereo+input:iec958-stereo",
+                    "always_available": true
                 }
             }
         },

@@ -78,6 +78,13 @@ else
   fi'
 fi
 
+# host completion /* add brackets as vim can't parse zsh's complex cmdlines 8-) {{{ */
+[ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
+[ -r /etc/hosts ] && : ${(A)_etc_hosts:=${(s: :)${(ps:\t:)${${(f)~~"$(</etc/hosts)"}%%\#*}##[:blank:]#[^[:blank:]]#}}} || _etc_hosts=()
+
+hosts=(`hostname` "$_ssh_hosts[@]" localhost)
+zstyle ':completion:*:hosts' hosts $hosts
+
 ## completion stuff
 zstyle ':compinstall' filename '$ZDOTDIR/.zshrc'
 

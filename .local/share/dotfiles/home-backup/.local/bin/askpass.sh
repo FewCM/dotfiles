@@ -4,4 +4,4 @@ rofi -dmenu\
      -i\
      -no-fixed-num-lines\
      -p "Root Password: "\
-     -theme $HOME/.config/rofi/$DESKTOP_SESSION/themes/askpass.rasi &
+     -theme $HOME/.config/rofi/themes/askpass.rasi &

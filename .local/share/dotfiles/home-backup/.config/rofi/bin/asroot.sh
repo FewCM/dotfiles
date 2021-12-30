@@ -19,7 +19,7 @@ options="$terminal\n$ST\n$files\n$editor\n$clifm\n$vim"
 chosen="$(echo -e "$options" | $rofi_command -p "Run as root(#)" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
-        $HOME/.local/bin/apps_as_root.sh 'alacritty --class alacritty-float,alacritty-float --config-file $HOME/.config/alacrittyalacritty.yml'
+        $HOME/.local/bin/apps_as_root.sh 'alacritty --class alacritty-float,alacritty-float --config-file $HOME/.config/alacritty/alacritty.yml'
         ;;
     $ST)
         $HOME/.local/bin/apps_as_root.sh 'st'

@@ -30,7 +30,7 @@ editor = code --wait
 whitespace = -trailing-space
 pager = diff-so-fancy | less --tabs=4 -RFX
 eol          = lf
-	excludesFile = /home/fewcm/.gitignore
+
 
 [i18n]
 logoutputencoding = utf8
@@ -132,5 +132,5 @@ smudge = git-lfs smudge -- %f
 process = git-lfs filter-process
 required = true
 
-[credential]
-helper = /home/fewcm/.local/bin/git_credentials_from_pass $@
+[include]
+    path = ~/.config/git/secret
