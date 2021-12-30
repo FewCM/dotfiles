@@ -1,0 +1,19 @@
+fpath .*.md$ bat --paging=never --color=always --style=plain %pistol-filename%
+#fpath .*\.md$ sh: bat --paging=never --color=always %pistol-filename% | head -8
+fpath .*.adoc$ bat --paging=never --color=always --style=plain %pistol-filename%
+fpath .*\.pem$ sh: openssl x509 -text -noout -in %pistol-filename% || cat %pistol-filename%
+fpath .*\.log$ sh: lnav %pistol-filename%
+inode/directory tree %pistol-filename%
+#inode/directory ls -l --color %pistol-filename%
+text/plain highlight %pistol-filename% -O ansi --force
+text/html w3m -T text/html -dump %pistol-filename%
+image/* chafa %pistol-filename%
+application/json sh: jq '.' %pistol-filename%
+application/pdf sh: pdftotext %pistol-filename% -
+application/* xxd %pistol-filename%
+application/x-x509-ca-cert openssl x509 -text -noout -in %pistol-filename%
+application/json bat --style=plain --paging=never --color=always %pistol-filename%
+audio/* mediainfo %pistol-filename%
+fpath /home/fewcm/.local/bin/[^/]+$ bat --map-syntax :bash --paging=never --color=always %pistol-filename%
+
+bat --style header --style rules --style snip --style changes --style header

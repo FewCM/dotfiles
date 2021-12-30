@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+. "$DOT_FILES_DIR/sh_utils.sh"
+
+git_toss_branch() {
+  CURRENT_BRANCH_NAME="$(git branch-name)"
+
+  BRANCH_NAME="${1:-$CURRENT_BRANCH_NAME}"
+  MERGE_BASE_BRANCH_NAME="$(git merge-base-branch)"
+  MERGE_BASE_REMOTE_NAME="$(git merge-base-remote)"
+
+  # in case the branch provided is invalid
+  if [ -n "$(git rev-parse "$1")" ]; then
+    BRANCH_NAME="$CURRENT_BRANCH_NAME"
+  fi
+
+  TOSSED_BRANCH="$BRANCH_NAME-$(date "+%Y-%m-%d-%H-%M-%S")"
+
+  if [ "$BRANCH_NAME" = "$MERGE_BASE_BRANCH_NAME" ]; then
+    log_warning "running \`toss-branch\` on '$BRANCH_NAME'"
+  fi
+
+  # create branches for preservation
+  indent --header git checkout -b "$TOSSED_BRANCH"
+  if [ -n "$(git status -s)" ]; then
+    log_warning "found working-copy changes..."
+    indent --header git checkout -b "$TOSSED_BRANCH-wip"
+    indent --header git add -A
+    indent --header git commit -m "WIP (git-toss-branch)"
+  fi
+
+  # delete original(s) - including merge-base
+  indent --header git branch -D "$BRANCH_NAME"
+  if [ "$BRANCH_NAME" != "$MERGE_BASE_BRANCH_NAME" ]; then
+    indent --header git branch -D "$MERGE_BASE_BRANCH_NAME"
+  fi
+  indent --header git checkout -b "$MERGE_BASE_BRANCH_NAME" "$MERGE_BASE_REMOTE_NAME/$MERGE_BASE_BRANCH_NAME"
+  indent --header git pull --rebase "$MERGE_BASE_REMOTE_NAME" "$MERGE_BASE_BRANCH_NAME"
+
+  if [ "$BRANCH_NAME" != "$MERGE_BASE_BRANCH_NAME" ]; then
+    indent --header git checkout -b "$BRANCH_NAME"
+  fi
+}
+
+git_toss_branch "$@"

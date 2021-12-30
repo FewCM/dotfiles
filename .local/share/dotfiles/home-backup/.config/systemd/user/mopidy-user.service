@@ -1,0 +1,10 @@
+[Unit]
+Description=Mopidy music server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mopidy &
+Restart=always
+
+[Install]
+WantedBy=default.target

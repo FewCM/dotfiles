@@ -1,0 +1,23 @@
+#!/bin/zsh
+zmodload zsh/zprof 
+typeset -F4 SECONDS=0
+
+export GPG_TTY=$TTY
+
+export DOT_FILES_DIR="$ZDOTDIR/lib"
+source "$DOT_FILES_DIR/zinit.sh"
+source "$DOT_FILES_DIR/auto_sourcer.sh"
+
+auto_source "$DOT_FILES_DIR/profile.sh"
+
+auto_source_initialize
+
+precmd() {
+  auto_source_check_and_reload_sources
+  #build_fzf_defaults
+}
+
+MYPROMPT=2
+
+print "[zshrc] ZSH took ${(M)$(( SECONDS * 1000 ))#*.?} ms"
+

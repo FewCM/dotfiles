@@ -1,0 +1,10 @@
+[Unit]
+Description=Polybar
+
+[Service]
+Type=simple
+ExecStart=polybar --reload bottom_HDMI -c  /home/fewcm/.config/polybar/config
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Polybar
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=%h/.config/polybar/launch.sh
+ExecStop=killall -q polybar
+
+[Install]
+WantedBy=multi-user.target

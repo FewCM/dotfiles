@@ -15,8 +15,8 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # A binary Zsh module which transparently and automatically compiles sourced scripts
-#module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
-#zmodload zdharma_continuum/zinit &>/dev/null
+module_path+=( "/home/fewcm/.local/share/zinit/module/Src" )
+zmodload zdharma_continuum/zinit &>/dev/null
 
 #eval $(gnome-keyring-daemon --components=secrets,pksc11 --start --foreground)
 zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
@@ -31,6 +31,8 @@ if [[ $(whoami) == fewcm ]]; then
 eval $(keychain --agents gpg  --eval B78563BE  --noask --quiet --absolute --dir "$XDG_RUNTIME_DIR"/keychain)
 fi
 
+zturbo(){ zinit depth'1' lucid ${1/#[0-9][a-d]/wait"${1}"} "${@:2}"; }
+
 typeset -F4 SECONDS=0
 
 zinit ice wait lucid multisrc"01-zopts.zsh \
@@ -44,6 +46,7 @@ zinit ice wait lucid multisrc"01-zopts.zsh \
 09-bash.command-not-found \
 10-fzf-tab.zsh" 
 zinit light $ZDOTDIR/zlib
+#10-fzf-tab.zsh" 
 
 zinit light-mode for \
         zdharma-continuum/zinit-annex-patch-dl \
@@ -55,10 +58,14 @@ zinit light-mode for \
 #zinit ice load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]'  from"gh-r" as"command" atload'eval "$(starship init zsh) ; export STARSHIP_CONFIG=~/.config/starship/config.toml"'
 #zinit load starship/starship
 
-zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
+zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" > /dev/null 2>&1 ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
 zinit load starship/starship
 
 zinit pack'binary+keys' for fzf
+
+# FZF-TAB
+zinit ice wait'0' lucid  
+zinit light Aloxaf/fzf-tab
 
 zinit ice depth'1' lucid
 zinit light bigH/auto-sized-fzf
@@ -77,20 +84,6 @@ zinit lucid reset \
  atload'zstyle ":completion:*:default" list-colors "${(s.:.)LS_COLORS}";' for \
     trapd00r/LS_COLORS
     
-#zinit \
-    #atclone'[[ -z ${commands[dircolors]} ]] &&
-      #local P=${${(M)OSTYPE##darwin}:+g};
-      #${P}sed -i '\''/txt/c\txt 38;5;172'\'' LS_COLORS;
-      #${P}dircolors -b LS_COLORS >! clrs.zsh' \
-    #atload'zstyle '\'':completion:*:default'\'' list-colors "${(s.:.)LS_COLORS}";' \
-    #atpull'%atclone' \
-    #git \
-    #id-as'trapd00r/LS_COLORS' \
-    #lucid \
-    #nocompile'!' \
-    #pick'clrs.zsh' \
-    #reset \
-  #for @trapd00r/LS_COLORS
 
 zinit light "chrissicool/zsh-256color"
 # }}}
@@ -129,6 +122,7 @@ zinit light agkozak/zsh-z
 zinit ice wait'1a' lucid  atload'bindkey "^d" dotbare-fedit' 
 zinit light kazhala/dotbare
 
+zinit ice wait'1a' lucid atload'export HISTORY_EXCLUDE_PATTERN="^cd|$HISTORY_EXCLUDE_PATTERN"'
 zinit light jgogstad/passwordless-history
 
 zinit ice wait'1a' lucid src'fzf-extras.sh' lucid
@@ -144,8 +138,8 @@ zinit ice wait'0e' lucid atclone"cp -vf zsh.completion _gopass" id-as"gopasspw/g
 zinit light gopasspw/gopass
 # Diff
 # Diff
-#zinit ice lucid as"program" pick"bin/git-dsf"
-#zinit light zdharma-continuum/zsh-diff-so-fancy
+zinit ice wait"2" lucid as"program" pick"bin/git-dsf"
+zinit load zdharma-continuum/zsh-diff-so-fancy
 
 #zinit ice depth=1 atload'source $ZDOTDIR/zlib/plugin_option/zsh-vi-mode.zsh' lucid
 #zinit light jeffreytse/zsh-vi-mode
@@ -186,13 +180,9 @@ _zpcompinit_custom() {
   fi
 }
 
-zinit ice depth'1' lucid wait'0' 
+zinit ice depth'1' lucid wait'0'  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
 zinit light zdharma-continuum/fast-syntax-highlighting 
     
-# FZF-TAB
-zinit ice wait'2' lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" 
-zinit light Aloxaf/fzf-tab
-
 chpwd() exa -h --git --icons --group-directories-first
 
 #MYPROMPT=2
