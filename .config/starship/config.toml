@@ -3,7 +3,7 @@
 # $all is shorthand for $username$hostname$shlvl$singularity$kubernetes$directory$vcsh$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$docker_context$package$cmake$cobol$dart$deno$dotnet$elixir$elm$erlang$golang$helm$java$julia$kotlin$lua$nim$nodejs$ocaml$perl$php$pulumi$purescript$python$rlang$red$ruby$rust$scala$swift$terraform$vlang$vagrant$zig$nix_shell$conda$memory_usage$aws$gcloud$openstack$env_var$crystal$custom$cmd_duration$line_break$jobs$battery$time$status$shell$character
 # $custom (excluding any modules already listed in `format`) is shorthand for ${custom.os-icon}${custom.trim_directory_4}${custom.trim_directory_5}${custom.git_host}
 format = '''
-$username$directory${custom.git_host}$git_branch$git_commit$git_status$git_state$fill$cmd_duration$status$time$line_break$character
+$username$directory$shell${custom.git_host}$git_branch$git_commit$git_status$git_state$fill$cmd_duration$status$time$line_break$character
 '''
 #format = '''
 #$username${username.fewcm}${username.root}$directory${custom.git_host}$git_branch$git_commit$git_status$git_state$fill$cmd_duration$status$time$line_break$character
@@ -128,19 +128,9 @@ detect_files = ['Cargo.toml']
 detect_folders = []
 
 [shell]
-format = '[$indicator]($style) '
-bash_indicator = 'bsh'
-fish_indicator = 'fsh'
-zsh_indicator = 'zsh'
-powershell_indicator = 'psh'
-ion_indicator = 'ion'
-elvish_indicator = 'esh'
-tcsh_indicator = 'tsh'
-nu_indicator = 'nu'
-xonsh_indicator = 'xsh'
-unknown_indicator = ''
-style = 'white bold'
-disabled = true
+bash_indicator = "[_](bold green)"
+zsh_indicator = "[](bold green)"
+disabled = false
 
 [status]
 format = '[$symbol$status]($style) '

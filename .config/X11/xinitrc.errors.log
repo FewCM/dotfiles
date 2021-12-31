@@ -1,95 +1,73 @@
 playerctld DBus service is already running
-[ 12/30/2021 23:29:33.654 parse_kawase_blur_strength INFO ] blur-strength: 8 [.iter = 3, .offset = 5.000000, .expand = 50]
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_OPACITY is 393
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_FRAME_EXTENTS is 291
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_STATE is 343
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_NAME is 297
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_PID is 298
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_NAME is 39
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_CLASS is 67
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_ICON_NAME is 37
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_TRANSIENT_FOR is 68
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_WINDOW_ROLE is 288
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_CLIENT_LEADER is 283
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom WM_CLIENT_MACHINE is 36
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_ACTIVE_WINDOW is 289
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _COMPTON_SHADOW is 394
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE is 313
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DESKTOP is 395
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DOCK is 396
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLBAR is 397
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_MENU is 318
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_UTILITY is 322
+[ 12/31/2021 12:47:05.805 parse_kawase_blur_strength INFO ] blur-strength: 8 [.iter = 3, .offset = 5.000000, .expand = 50]
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom _NET_WM_WINDOW_OPACITY is 399
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom _NET_FRAME_EXTENTS is 323
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom WM_STATE is 375
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom _NET_WM_NAME is 329
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom _NET_WM_PID is 330
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom WM_NAME is 39
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom WM_CLASS is 67
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom WM_ICON_NAME is 37
+[ 12/31/2021 12:47:05.805 atom_getter DEBUG ] Atom WM_TRANSIENT_FOR is 68
+[ 12/31/2021 12:47:05.806 atom_getter DEBUG ] Atom WM_WINDOW_ROLE is 320
+[ 12/31/2021 12:47:05.806 atom_getter DEBUG ] Atom WM_CLIENT_LEADER is 315
+[ 12/31/2021 12:47:05.806 atom_getter DEBUG ] Atom WM_CLIENT_MACHINE is 36
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_ACTIVE_WINDOW is 321
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _COMPTON_SHADOW is 402
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE is 345
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DESKTOP is 403
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DOCK is 404
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLBAR is 405
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_MENU is 350
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_UTILITY is 354
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_SPLASH is 406
+[ 12/31/2021 12:47:05.807 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DIALOG is 347
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NORMAL is 351
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DROPDOWN_MENU is 349
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_POPUP_MENU is 352
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLTIP is 353
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NOTIFICATION is 408
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_COMBO is 346
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DND is 348
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_STATE is 332
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_STATE_FULLSCREEN is 335
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _NET_WM_BYPASS_COMPOSITOR is 409
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom UTF8_STRING is 314
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom C_STRING is 410
+[ 12/31/2021 12:47:05.808 atom_getter DEBUG ] Atom _GTK_FRAME_EXTENTS is 411
 server does not have extension for -dpms option
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_SPLASH is 398
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DIALOG is 315
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NORMAL is 319
-[ 12/30/2021 23:29:33.654 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DROPDOWN_MENU is 317
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_POPUP_MENU is 320
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_TOOLTIP is 321
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_NOTIFICATION is 399
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_COMBO is 314
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_WINDOW_TYPE_DND is 316
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_STATE is 300
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_STATE_FULLSCREEN is 303
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_BYPASS_COMPOSITOR is 400
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom UTF8_STRING is 282
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom C_STRING is 401
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _GTK_FRAME_EXTENTS is 402
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom COMPTON_VERSION is 403
-[ 12/30/2021 23:29:33.655 atom_getter DEBUG ] Atom _NET_WM_CM_S0 is 293
-[ 12/30/2021 23:29:33.655 init_overlay DEBUG ] overlay = 0x0000029e
-[ 12/30/2021 23:29:33.655 file_watch_init DEBUG ] Starting watching for file changes
-[ 12/30/2021 23:29:33.655 file_watch_add DEBUG ] Adding "/home/fewcm/.config/picom/picom.conf" to watched files
-[ 12/30/2021 23:29:33.656 add_win DEBUG ] Adding window 0x00600001
-[ 12/30/2021 23:29:33.656 add_win DEBUG ] Adding window 0x00800004
-[ 12/30/2021 23:29:33.656 session_init DEBUG ] Initial stack:
-[ 12/30/2021 23:29:33.656 session_init DEBUG ] 0x00800004
-[ 12/30/2021 23:29:33.656 session_init DEBUG ] 0x00600001
+[ 12/31/2021 12:47:05.809 atom_getter DEBUG ] Atom COMPTON_VERSION is 412
+[ 12/31/2021 12:47:05.809 atom_getter DEBUG ] Atom _NET_WM_CM_S0 is 325
+[ 12/31/2021 12:47:05.809 init_overlay DEBUG ] overlay = 0x0000029e
+[ 12/31/2021 12:47:05.809 file_watch_init DEBUG ] Starting watching for file changes
+[ 12/31/2021 12:47:05.809 file_watch_add DEBUG ] Adding "/home/fewcm/.config/picom/picom.conf" to watched files
+[ 12/31/2021 12:47:05.809 add_win DEBUG ] Adding window 0x00400001
+[ 12/31/2021 12:47:05.809 add_win DEBUG ] Adding window 0x00c00001
+[ 12/31/2021 12:47:05.809 add_win DEBUG ] Adding window 0x00a00004
+[ 12/31/2021 12:47:05.809 add_win DEBUG ] Adding window 0x01400001
+[ 12/31/2021 12:47:05.809 add_win DEBUG ] Adding window 0x01200001
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] Initial stack:
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] 0x01200001
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] 0x01400001
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] 0x00a00004
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] 0x00c00001
+[ 12/31/2021 12:47:05.809 session_init DEBUG ] 0x00400001
 error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
 polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
 polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
 polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
 polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
 polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
 polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
+sh: line 1: /home/fewcm/.bar: No such file or directory
 
-(indicator-sound-switcher:2034284): Gdk-CRITICAL **: 23:29:34.607: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+(indicator-sound-switcher:74386): Gdk-CRITICAL **: 12:47:06.685: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
 error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
 polybar|notice:  Termination signal received, shutting down...
 polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-[2036882:2036929:1230/232953.747050:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
-[2036882:2036929:1230/232953.747066:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
-[2036882:2036929:1230/232953.747070:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
-[2036882:2036929:1230/232953.848670:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
+sh: line 1: /home/fewcm/.bar: No such file or directory
 polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
 polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
 polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
@@ -98,292 +76,8 @@ polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:
 polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
 polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
 polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-
-(geany:2110136): Gtk-CRITICAL **: 23:44:00.025: gtk_widget_destroy: assertion 'GTK_IS_WIDGET (widget)' failed
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-sh: line 1: /home/fewcm/bar.sh: No such file or directory
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-Fontconfig error: Cannot load default config file: No such file: (null)
-Fontconfig error: Cannot load default config file: No such file: (null)
-Fontconfig error: Cannot load default config file: No such file: (null)
-Fontconfig error: Cannot load default config file: No such file: (null)
-Fontconfig error: Cannot load default config file: No such file: (null)
-Fontconfig error: Cannot load default config file: No such file: (null)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-
-** (nemo:2760274): WARNING **: 00:49:47.672: Current gtk theme is not known to have nemo support (Gruvbox-Material-Dark-Soft-red) - checking...
-
-** (nemo:2760274): WARNING **: 00:50:10.108: Could not inhibit power management: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.SessionManager" does not exist
-
-** (nemo:2760274): WARNING **: 00:50:12.067: Could not inhibit power management: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.SessionManager" does not exist
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Termination signal received, shutting down...
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-
-(nemo:2760274): Gtk-CRITICAL **: 00:53:20.848: gtk_widget_draw: assertion '!widget->priv->alloc_needed' failed
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-erresc: unknown str ESC]8
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.906: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.906: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.907: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.907: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.907: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.907: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-
-(nemo:2760274): Gtk-CRITICAL **: 01:01:20.907: gtk_container_foreach: assertion 'GTK_IS_CONTAINER (container)' failed
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-error, cannot load font from name: 'WenQuanYi Zen Hei Sharp:style=Regular:size=8;antialias=true:autohint=true'
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Termination signal received, shutting down...
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Parsing config file: /home/fewcm/.config/polybar/config
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-polybar|notice:  Loaded font "Iosevka Term:style=Regular:size=12" (name=Iosevka Term, offset=4, file=/home/fewcm/.local/share/fonts/TTF/Iosevka Term Nerd Font Complete.ttf)
-polybar|notice:  Loaded font "Material Design Icons Desktop:style=Regular:size=14" (name=Material Design Icons Desktop, offset=4, file=/home/fewcm/.local/share/fonts/material-design-icons.ttf)
-polybar|notice:  Loaded font "WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑:style=Regular:size=11" (name=WenQuanYi Zen Hei, offset=3, file=/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc)
-[2036951:2036975:1231/010349.751100:ERROR:quic_idle_network_detector.cc(102)] SetAlarm called after stopped
-
-(geany:2227471): Gtk-CRITICAL **: 01:04:02.332: gtk_widget_destroy: assertion 'GTK_IS_WIDGET (widget)' failed
+[76978:77016:1231/124726.582966:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+[76978:77016:1231/124726.582982:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+[76978:77016:1231/124726.582986:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+[76978:77016:1231/124726.682785:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+[76978:76978:1231/125232.646390:ERROR:interface_endpoint_client.cc(658)] Message 1 rejected by interface blink.mojom.WidgetHost

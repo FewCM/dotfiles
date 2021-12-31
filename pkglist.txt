@@ -29,6 +29,7 @@ calc
 calcurse
 chafa
 cloud-init
+conky
 cpio
 crda
 ctags
@@ -209,8 +210,10 @@ pulseaudio-alsa
 pulseaudio-equalizer-ladspa
 pulsemixer
 pv
+python-certifi
 python-pip
 python-psutil
+python-pycurl
 python-pygit2
 python-pywal
 qt5-graphicaleffects
@@ -322,6 +325,7 @@ xsel
 xsettingsd
 yad
 yay-bin
+youtube-dl
 zenity
 zip
 zram-generator

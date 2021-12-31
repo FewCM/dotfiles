@@ -1,8 +1,10 @@
 #!/bin/zsh
 skip_global_compinit=1
 
+if [[ "$SHELL" == *'zsh' ]]; then
 unsetopt GLOBAL_RCS
 setopt noglobalrcs
+fi
 
 # 10ms for key sequences (Decrease key input delay)
 # https://www.johnhawthorn.com/2012/09/vi-escape-delays/
@@ -144,9 +146,9 @@ typeset -U path PATH sudo_path cdpath fpath
 
 # https://github.com/sorin-ionescu/prezto/blob/master/runcoms/zshenv
 # Ensure that a non-login, non-interactive shell has a defined environment.
-if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprofile"
-fi
+#if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+  #source "${ZDOTDIR:-$HOME}/.zprofile"
+#fi
 
 if [ "$TERM" = "linux" ]; then
     _SEDCMD='s/.*\*color\([0-9]\{1,\}\).*#\([0-9a-fA-F]\{6\}\).*/\1 \2/p'

@@ -2,7 +2,9 @@ aurto
 aurutils
 authy
 btrfs-du
+btrfs-list-git
 czkawka-gui-bin
+eww-git
 find-the-command
 firedm
 google-chrome
@@ -17,10 +19,14 @@ mopidy-spotify
 mullvad-vpn-bin
 nerd-fonts-hack
 nvidia-470xx-dkms
+nvidia-470xx-settings
 nvidia-470xx-utils
 os-prober-btrfs
 pistol-git
 polybar-dwm-module
+python-awesometkinter
+python-plyer
+python-pystray
 python-spotdl
 repoctl
 skypeforlinux-stable-bin
