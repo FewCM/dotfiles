@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-git_conflicts() {
-  git status --short | grep '^[^ ][^ ]' --color=never
-}
-
-git_conflicts

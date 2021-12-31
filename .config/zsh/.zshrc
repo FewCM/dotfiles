@@ -116,8 +116,8 @@ zinit light BurntSushi/ripgrep
 zinit ice wait'0d' atload'ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(autopair-insert)' lucid     
 zinit light hlissner/zsh-autopair 
 
-zinit ice wait'0e' atload'zstyle ":completion:*" menu select' lucid     
-zinit light agkozak/zsh-z
+#zinit ice wait'0e' atload'zstyle ":completion:*" menu select' lucid     
+#zinit light agkozak/zsh-z
 
 zinit ice wait'1a' lucid  atload'bindkey "^d" dotbare-fedit' 
 zinit light kazhala/dotbare
@@ -143,6 +143,14 @@ zinit load zdharma-continuum/zsh-diff-so-fancy
 
 #zinit ice depth=1 atload'source $ZDOTDIR/zlib/plugin_option/zsh-vi-mode.zsh' lucid
 #zinit light jeffreytse/zsh-vi-mode
+zinit ice wait'0e'  lucid atload'cp src/_git _git'
+zinit light black7375/zsh-git-completion
+
+zinit ice wait"2" as"command" from"gh-r" lucid \
+  atclone'cp completions/_zoxide _zoxide ; cp -vf man/zoxide* "$ZINIT[MAN_DIR]/man1"' \
+  atload'eval "$(zoxide init zsh)" > /dev/null 2>&1 ' \
+  atpull"%atclone" nocompile'!'
+zinit light ajeetdsouza/zoxide
 
 source $ZDOTDIR/zlib/00-bootstrap.zsh
 zinit ice wait'0b' atload'!_zsh-history-substring-search-setting'  lucid

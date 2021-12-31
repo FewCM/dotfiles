@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount build partition
+
+[Mount]
+What=/dev/disk/by-uuid/6E092B5051EFA693
+Where=/run/media/fewcm/Volume
+Type=ext4
+Options=rw,noatime
+
+[Install]
+WantedBy=multi-user.target

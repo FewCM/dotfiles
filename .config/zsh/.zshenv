@@ -141,7 +141,8 @@ export DOTBARE_PREVIEW="cat -n {}"
 export DOTBARE_DIFF_PAGER="delta --diff-so-fancy --line-numbers"
 # }}}
 
-export PATH="$PATH:${$(find $HOME/.local/bin -type d -printf %p:)%%:}"
+
+export PATH="$PATH:${$(find "$HOME"/.local/bin -type d -printf %p:)%%:}"
 typeset -U path PATH sudo_path cdpath fpath
 
 # https://github.com/sorin-ionescu/prezto/blob/master/runcoms/zshenv

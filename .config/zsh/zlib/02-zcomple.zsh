@@ -46,6 +46,18 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
     named netdump news nfsnobody nobody nscd ntp nut nx openvpn \
     operator pcap postfix postgres privoxy pulse pvm quagga radvd \
     rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs '_*'
+ 
+ 
+zstyle -e ':completion:*:hosts' hosts 'reply=(
+${=${=${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) 2>/dev/null)"}%%[#| ]*}//\]:[0-9]*/ }//,/ }//\[/ }
+${=${(f)"$(cat /etc/hosts(|)(N) <<(ypcat hosts 2>/dev/null))"}%%\#*}
+	${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
+		)'
+
+
+ # ignore uninteresting hosts
+ zstyle ':completion:*:*:*:hosts' ignored-patterns \
+    localhost loopback ip6-localhost ip6-loopback localhost6 localhost6.localdomain6 localhost.localdomain
 
 # run rehash on completion so new installed program are found automatically:
 _force_rehash() {
@@ -82,8 +94,9 @@ fi
 [ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
 [ -r /etc/hosts ] && : ${(A)_etc_hosts:=${(s: :)${(ps:\t:)${${(f)~~"$(</etc/hosts)"}%%\#*}##[:blank:]#[^[:blank:]]#}}} || _etc_hosts=()
 
-hosts=(`hostname` "$_ssh_hosts[@]" localhost)
+hosts=(`hostname` "$_ssh_hosts[@]" "$_etc_hosts[@]" localhost)
 zstyle ':completion:*:hosts' hosts $hosts
+
 
 ## completion stuff
 zstyle ':compinstall' filename '$ZDOTDIR/.zshrc'

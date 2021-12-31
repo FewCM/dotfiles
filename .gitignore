@@ -35,6 +35,8 @@
 /.local/share/**
 !/.local/share/dwm/
 !/.local/share/dwm/**
+!/.local/share/zoxide/
+!/.local/share/zoxide/**
 /.local/share/dwm/*.log
 !/.local/share/fonts/
 !/.local/share/fonts/**
@@ -53,6 +55,8 @@
 /.config/user-dirs.dirs
 /.config/user-dirs.locate
 /.config/autostart/
+/.config/aurutils/
+/.config/conkeww/
 /.config/Authy\ Desktop/
 /.config/citra-emu
 /.config/czkawka/
