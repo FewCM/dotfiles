@@ -7,6 +7,7 @@ aria2
 asp
 autoconf
 automake
+autorandr
 b43-fwcutter
 base
 bash-completion
@@ -30,6 +31,7 @@ calcurse
 chafa
 cloud-init
 conky
+cowsay
 cpio
 crda
 ctags
@@ -61,7 +63,9 @@ ffmpegthumbnailer
 firewalld
 flex
 font-manager-git
+fortune-mod
 fsarchiver
+fzf
 gcc
 geany
 geany-plugins
@@ -121,15 +125,13 @@ libfido2
 libportal
 libtool
 libusb-compat
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-lightdm-webkit2-greeter
 linux-atm
 linux-firmware
 linux-zen
 linux-zen-headers
 lnav
 logwatch
+lolcat
 lsb-release
 lsscsi
 lvm2
@@ -148,7 +150,6 @@ micro-git
 mkinitcpio-nfs-utils
 mlocate
 modemmanager
-mopidy
 moreutils
 mpc
 mpd
@@ -302,7 +303,6 @@ xdo
 xdotool
 xf86-video-fbdev
 xf86-video-vesa
-xfce4-power-manager
 xfce4-settings
 xfsprogs
 xl2tpd

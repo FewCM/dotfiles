@@ -48,11 +48,11 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
     rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs '_*'
  
  
-zstyle -e ':completion:*:hosts' hosts 'reply=(
-${=${=${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) 2>/dev/null)"}%%[#| ]*}//\]:[0-9]*/ }//,/ }//\[/ }
-${=${(f)"$(cat /etc/hosts(|)(N) <<(ypcat hosts 2>/dev/null))"}%%\#*}
-	${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
-		)'
+#zstyle -e ':completion:*:hosts' hosts 'reply=(
+#${=${=${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) 2>/dev/null)"}%%[#| ]*}//\]:[0-9]*/ }//,/ }//\[/ }
+#${=${(f)"$(cat /etc/hosts(|)(N) <<(ypcat hosts 2>/dev/null))"}%%\#*}
+	#${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
+		#)'
 
 
  # ignore uninteresting hosts
@@ -90,12 +90,12 @@ else
   fi'
 fi
 
-# host completion /* add brackets as vim can't parse zsh's complex cmdlines 8-) {{{ */
-[ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
-[ -r /etc/hosts ] && : ${(A)_etc_hosts:=${(s: :)${(ps:\t:)${${(f)~~"$(</etc/hosts)"}%%\#*}##[:blank:]#[^[:blank:]]#}}} || _etc_hosts=()
+## host completion /* add brackets as vim can't parse zsh's complex cmdlines 8-) {{{ */
+#[ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
+#[ -r /etc/hosts ] && : ${(A)_etc_hosts:=${(s: :)${(ps:\t:)${${(f)~~"$(</etc/hosts)"}%%\#*}##[:blank:]#[^[:blank:]]#}}} || _etc_hosts=()
 
-hosts=(`hostname` "$_ssh_hosts[@]" "$_etc_hosts[@]" localhost)
-zstyle ':completion:*:hosts' hosts $hosts
+#hosts=(`hostname` "$_ssh_hosts[@]" "$_etc_hosts[@]" localhost)
+#zstyle ':completion:*:hosts' hosts $hosts
 
 
 ## completion stuff

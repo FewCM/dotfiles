@@ -61,7 +61,7 @@ zinit light-mode for \
 zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)" > /dev/null 2>&1 ; export STARSHIP_CONFIG=~/.config/starship/config.toml'
 zinit load starship/starship
 
-zinit pack'binary+keys' for fzf
+#zinit pack'binary+keys' for fzf
 
 # FZF-TAB
 zinit ice wait'0' lucid  
@@ -119,8 +119,8 @@ zinit light hlissner/zsh-autopair
 #zinit ice wait'0e' atload'zstyle ":completion:*" menu select' lucid     
 #zinit light agkozak/zsh-z
 
-zinit ice wait'1a' lucid  atload'bindkey "^d" dotbare-fedit' 
-zinit light kazhala/dotbare
+#zinit ice wait'1a' lucid  atload'bindkey "^d" dotbare-fedit' 
+#zinit light kazhala/dotbare
 
 zinit ice wait'1a' lucid atload'export HISTORY_EXCLUDE_PATTERN="^cd|$HISTORY_EXCLUDE_PATTERN"'
 zinit light jgogstad/passwordless-history

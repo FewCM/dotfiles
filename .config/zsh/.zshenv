@@ -107,7 +107,7 @@ export CORRECT_IGNORE_FILE='.*'
 
 # Language/Programs Specifics {{{1
 #export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgreprc"
-export QT_STYLE_OVERRIDE=kvantum
+export QT_STYLE_OVERRIDE=qt5ct-style
 export QT_QPA_PLATFORMTHEME="qt5ct"
 #export QT_QPA_PLATFORMTHEME=gtk2
 
