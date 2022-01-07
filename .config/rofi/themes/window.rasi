@@ -18,7 +18,7 @@ window {
     text-color:                     @foreground;
 	border:							3px;
     border-radius:                  8px;
-    border-color:					@foreground;
+    border-color:					@accent;
     width:                          850px;
     location:                       center;
     anchor:                         center;
